@@ -1,0 +1,14 @@
+.container {
+  .header {
+    padding: 3em 3em 0 3em;
+    nav {
+      display: flex;
+      justify-content: center;
+      a { padding: 0 1em; }
+      a.selected { color: $hover-color; }
+    }
+  }
+  .content {
+    padding: 0 3em 3em 3em;
+  }
+}
