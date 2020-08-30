@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../containers/Layout";
 import * as THREE from "three";
-import { add } from "../rust/test.rs";
 
 class Home extends React.Component {
   state = {
@@ -43,8 +42,8 @@ class Home extends React.Component {
     const animate = () => {
       requestAnimationFrame(animate);
 
-      cube.rotation.x = add(cube.rotation.x, 0.01);
-      cube.rotation.y = add(cube.rotation.y, 0.02);
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.02;
 
       renderer.render(scene, camera);
     };
