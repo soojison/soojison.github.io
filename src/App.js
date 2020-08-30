@@ -7,6 +7,7 @@ import Details from "./pages/Details";
 import "normalize.css";
 
 const App = () => {
+  console.log(process.env.ENV);
   return (
     <Router>
       <Switch>
