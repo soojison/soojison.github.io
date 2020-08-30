@@ -7,10 +7,12 @@ const About = () => {
     <div className="content">
       <h1>Hi there,</h1>
       <p>
-        My name is Sooji and I'm a jack of all trades. I do some design and
-        full-stack development work at Intuit. I'm passionate about making
-        websites that are user-friendly. I have a bachelors in Computer Science
-        and Theatre and Dance, with a minor in Linguistics.
+        Sooji Son is a jack of all trades based in Iowa City. Currently she is
+        working as a designer and a full-stack developer at Intuit, and before
+    that she studied Computer Science, Theatre and Dance, and Linguistics at
+    Grinnell College. Professionally, she enjoys finding ways to make websites
+    that are user-friendly. Outside of work, she wants to learn more about generative
+    models to create art, 3D modeling and sculpting, and other web development tools.
       </p>
       <p>
         In my free time, I might be found making mechanical keyboards, embroidering,
