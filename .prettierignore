@@ -1,0 +1,6 @@
+# ignore artifacts
+dist
+coverage
+.cache
+.git
+.gitignore

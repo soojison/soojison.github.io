@@ -4,8 +4,12 @@
     nav {
       display: flex;
       justify-content: center;
-      a { padding: 0 1em; }
-      a.selected { color: $hover-color; }
+      a {
+        padding: 0 1em;
+      }
+      a.selected {
+        color: $hover-color;
+      }
     }
   }
   .content {
