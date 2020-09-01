@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../containers/Layout";
 import { NavLink } from "react-router-dom";
 import { isEmpty } from "lodash";
+import ReactMarkdown from "react-markdown";
 
 class Details extends React.Component {
   constructor() {
@@ -42,9 +43,11 @@ class Details extends React.Component {
           {isEmpty(content) && <p>Nothing written yet!</p>}
           {!isEmpty(content) && (
             <div>
+              <img src={content.header.fields.file.url} className="headerImg" />
               <h1>{content.title}</h1>
               <h3>{content.capacity}</h3>
-              <p>{content.desc}</p>
+              <img src={content.poster.fields.file.url} className="posterImg" />
+              <ReactMarkdown source={content.desc} />
             </div>
           )}
         </div>
