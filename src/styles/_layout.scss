@@ -6,9 +6,10 @@
       justify-content: center;
       a {
         padding: 0 1em;
+        color: $hover-color;
       }
       a.selected {
-        color: $hover-color;
+        color: $selected-color;
       }
     }
   }
