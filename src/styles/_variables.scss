@@ -1,7 +1,15 @@
-$body-font: "Lexend Peta", sans-serif;
-$header-font: "Lexend Peta", sans-serif;
+// space cadet colorways
+$cadet-grey: #91A3B0;
+$cadet-blue: #5F9EA0;
+$star-command-blue: #007BB8;
+$cadet: #536872;
+$space-cadet: #1E2952;
+
+$body-font: 400 1em "Syne", sans-serif;
+$header-font: 800 1em "Gorton Digital", sans-serif;
+$body-color: $cadet-grey;
+$title-color: $star-command-blue;
+$link-color: $cadet;
+$hover-color:$space-cadet;
 $text-color: #fff;
-$hover-color: #f67280;
-$body-color: #000;
-$title-color: #f67280;
-$selected-color: #c06c84;
+$selected-color: $space-cadet;

@@ -22,8 +22,30 @@ const About = () => {
           </a>
           , or on other undisclosed places by serendipity.
         </p>
+
+        <h1>Need More?</h1>
+        <p>Here are my resumes.</p>
+
         <h1>*</h1>
-        <p>This site was made with React, Parcel, and Three.js</p>
+        <p>
+          This site was made with React, Parcel, and Three.js. The content is
+          being served from Contentful, and the colorways of the page have been
+          inspired from{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Space-cadet_keyboard"
+            target="_blank"
+          >
+            Space Cadet
+          </a>
+          . You can find the iconic Gorton fonts{" "}
+          <a
+            href="https://github.com/drdnar/GortonDigital/releases"
+            target="_blank"
+          >
+            here
+          </a>
+          .
+        </p>
       </div>
     </Layout>
   );

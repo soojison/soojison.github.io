@@ -2,11 +2,12 @@
   .header {
     padding: 3em 3em 0 3em;
     nav {
+      font: $header-font;
+      text-transform: uppercase;
       display: flex;
       justify-content: center;
       a {
         padding: 0 1em;
-        color: $hover-color;
       }
       a.selected {
         color: $selected-color;
