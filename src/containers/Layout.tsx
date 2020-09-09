@@ -1,7 +1,11 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const Layout = ({ children }) => {
+type Props = {
+  children: React.ReactNode
+}
+
+const Layout:React.FC<Props> = ({ children }) => {
   return (
     <div className="container">
       <div className="header">
