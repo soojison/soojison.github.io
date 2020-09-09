@@ -6,7 +6,7 @@ import Projects from "./pages/projects";
 import Details from "./pages/Details";
 import "normalize.css";
 
-const App = () => {
+const App: React.FC<> = () => {
   console.log(process.env.ENV);
   return (
     <Router>

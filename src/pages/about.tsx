@@ -28,7 +28,7 @@ const About = () => {
 
         <h1>*</h1>
         <p>
-          This site was made with React, Parcel, and Three.js. The content is
+          This site was made with React, TypeScript, Parcel, and Three.js. The content is
           being served from Contentful, and the colorways of the page have been
           inspired from{" "}
           <a
