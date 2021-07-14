@@ -15,7 +15,7 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "gh-pages": "^3.1.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.1",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
     "prettier": "^2.1.1",
@@ -27,11 +27,12 @@
     "contentful": "^7.14.6",
     "lodash": "^4.17.20",
     "normalize.css": "^8.0.1",
-    "react": "^16.13.1",
+    "react": "^16.8.0 || ^17.0.0",
     "react-dom": "^16.13.1",
     "react-image-gallery": "^1.0.8",
     "react-markdown": "^4.3.1",
     "react-pdf": "^5.0.0",
+    "react-query": "^3.18.1",
     "react-router-dom": "^5.2.0",
     "three": "^0.120.0"
   }
