@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/home";
+import Home from "./pages/home.jsx";
 import About from "./pages/about";
 import Projects from "./pages/projects.jsx";
 import Details from "./pages/Details.jsx";

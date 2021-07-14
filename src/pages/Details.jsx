@@ -55,7 +55,9 @@ const Details = (props) => {
         <h4>{content.toolsUsed}</h4>
         <ReactMarkdown source={content.desc} escapeHtml={false} />
         <h1>Media</h1>
-        <ImageGallery items={images} />
+        {images.map((x) => (
+          <img src={x.original} width="100%" key={x.thumbnail} />
+        ))}
         {content.brochure && (
           <div className="brochure">
             <h1>{pdfName}</h1>

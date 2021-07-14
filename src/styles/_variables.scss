@@ -12,13 +12,13 @@ $sage: #a5c6b1;
 $pink: #d2afae;
 $eggshell: #fbefdf;
 
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
 
 $body-font: 400 1em "Syne", sans-serif;
-$header-font: 400 1em "Staatliches", sans-serif;// 800 1em "Gorton Digital", sans-serif;
-$body-color: $grey;
+$header-font: 800 1em "Syne", sans-serif;// 800 1em "Gorton Digital", sans-serif;
+$body-color: $eggshell;
 $title-color: $sand;
 $link-color: $yellow;
 $hover-color: $sand;
-$text-color: $eggshell;
+$text-color: $grey;
 $selected-color: $sand;

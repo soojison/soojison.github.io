@@ -1,0 +1,10 @@
+.entries {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.entry {
+  padding: 5em;
+  margin: 1em;
+  background: white;
+}

@@ -1,10 +1,13 @@
 .container {
   .header {
     padding: 3em 3em 0 3em;
+    display: flex;
+    align-items: center;
+
     nav {
-      font: $header-font;
-      text-transform: uppercase;
+      margin: 0 0 0 auto;
       display: flex;
+      text-transform: uppercase;
       justify-content: center;
       a {
         padding: 0 1em;

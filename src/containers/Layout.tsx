@@ -2,10 +2,10 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 type Props = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-const Layout:React.FC<Props> = ({ children }) => {
+const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="container">
       <div className="header">
@@ -15,10 +15,6 @@ const Layout:React.FC<Props> = ({ children }) => {
         <nav>
           <NavLink to="/" exact activeClassName="selected">
             <h2>/home</h2>
-          </NavLink>
-
-          <NavLink to="/projects" exact activeClassName="selected">
-            <h2>/projects</h2>
           </NavLink>
 
           <NavLink to="/about" activeClassName="selected">
