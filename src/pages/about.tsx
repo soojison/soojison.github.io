@@ -73,13 +73,6 @@ class About extends React.Component {
             >
               Space Cadet
             </a>
-            . You can find the iconic Gorton fonts{" "}
-            <a
-              href="https://github.com/drdnar/GortonDigital/releases"
-              target="_blank"
-            >
-              here
-            </a>
             .
           </p>
         </div>

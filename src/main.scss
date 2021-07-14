@@ -1,25 +1,3 @@
-@font-face {
-    font-family: 'Gorton Digital';
-    src: url('../assets/GortonDigitalHeavy.eot');
-    src: local('☺︎'),
-        url('../assets/GortonDigitalHeavy.woff2') format('woff2'),
-         url('../assets/GortonDigitalHeavy.woff') format('woff'),
-         url('../assets/GortonDigitalHeavy.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-};
-
-@font-face {
-    font-family: 'Gorton Digital';
-    src: url('../assets/GortonDigitalLight.eot');
-    src: local('☺︎'),
-        url('../assets/GortonDigitalLight.woff2') format('woff2'),
-         url('../assets/GortonDigitalLight.woff') format('woff'),
-         url('../assets/GortonDigitalLight.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-};
-
 @import "styles/_variables";
 @import "styles/_base";
 @import "styles/_layout";
