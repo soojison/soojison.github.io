@@ -3,8 +3,14 @@
   width: 100%;
   flex-wrap: wrap;
 }
+.entryContainer {
+  margin: 2em;
+}
 .entry {
-  padding: 5em;
-  margin: 1em;
-  background: white;
+  padding: 6em;
+  background: rgba(0,0,0,0.5);
+  @include transition(all 0.5s ease-in-out);
+  &:hover {
+    background: rgba(256,256,256,0.1);
+  }
 }

@@ -18,6 +18,10 @@ h1, h3, h4 {
   font: $header-font;
   text-transform: uppercase;
   color: $title-color;
+
+  &:hover {
+    text-shadow: 5px 5px $cadet-blue;
+  }
 }
 
 h3 {

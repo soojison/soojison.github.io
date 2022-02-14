@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../containers/Layout";
+import Card from "../containers/Card";
 import { NavLink } from "react-router-dom";
 import { useQuery } from "react-query";
 
@@ -46,13 +47,13 @@ const Home = (props) => {
         <h1>Theatre Projects</h1>
         <div className="entries">
           {data.items.map((entry) => (
-            <NavLink to={`projects/${entry.fields.link}`}>
-              <div className="entry">
-                {entry.fields.name}
-                <br />
-                {entry.fields.desc}
-              </div>
-            </NavLink>
+            <Card
+              key={entry.fields.link}
+              link={`projects/${entry.fields.link}`}
+              name={entry.fields.name}
+              desc={entry.fields.desc}
+              photo={entry.fields.pic}
+            />
           ))}
         </div>
         <h1>Digital Projects</h1>

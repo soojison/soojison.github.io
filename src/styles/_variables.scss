@@ -16,9 +16,18 @@ $eggshell: #fbefdf;
 
 $body-font: 400 1em "Syne", sans-serif;
 $header-font: 800 1em "Syne", sans-serif;
-$body-color: $eggshell;
-$title-color: $sand;
+$body-color: #000;
+$title-color: $sage;
 $link-color: $yellow;
 $hover-color: $sand;
 $text-color: $grey;
 $selected-color: $sand;
+
+// transitions mixin
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
