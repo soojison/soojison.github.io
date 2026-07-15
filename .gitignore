@@ -6,7 +6,7 @@ references/
 *.rtf
 
 # ...except the resume, which IS meant to be published
-!files/resume.pdf
+!files/Sooji Son Designer Resume.pdf
 
 # Personal notes
 README.txt
