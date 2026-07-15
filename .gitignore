@@ -5,6 +5,9 @@ references/
 *.docx
 *.rtf
 
+# ...except the resume, which IS meant to be published
+!files/resume.pdf
+
 # Personal notes
 README.txt
 
