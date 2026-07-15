@@ -1,0 +1,2901 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sooji Son — Staff Product Designer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="portfolio.css" />
+    </head>
+    <body>
+        <div
+            class="scroll-nav"
+            id="scrollNav"
+            role="navigation"
+            aria-label="Page sections"
+        ></div>
+
+        <nav>
+            <a href="#" class="nav-name" data-nav="work">꩜ Sooji Son</a>
+            <ul class="nav-links">
+                <li><a href="#work" data-nav="work">Work</a></li>
+                <li><a href="#about" data-nav="about">About</a></li>
+            </ul>
+        </nav>
+
+        <button
+            type="button"
+            class="back-fab"
+            id="backFab"
+            aria-label="Back"
+            data-tooltip="Back to home"
+        >
+            <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+            >
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </button>
+
+        <div class="layout-grid">
+            <aside class="layout-left">
+                <div class="hero">
+                    <p class="hero-eyebrow">Hi there!</p>
+                    <h1>
+                        I design technical tools<br />engineers <em>actually</em
+                        ><br />want to use ᯓ★
+                    </h1>
+                    <button
+                        type="button"
+                        class="oe-toggle"
+                        id="overexplainToggle"
+                        aria-pressed="false"
+                    >
+                        <span class="oe-switch" aria-hidden="true">
+                            <span class="oe-thumb"></span>
+                        </span>
+                        <span class="oe-label">overexplain</span>
+                    </button>
+                    <p class="hero-desc">
+                        Staff Product Designer at Intuit<span class="oe-aside">
+                            who spent four years as an engineer, four as a
+                            designer</span
+                        >. I think like a designer and build like an engineer:
+                        a <em>...dev-signer (?)</em>, if you will. I
+                        work on internal platform tools: data pipeline authoring
+                        surfaces, AI/agent development platform, and infrastructure
+                        that Intuit's products are built on top of. Think dense,
+                        technical UI for engineers<span class="oe-aside">
+                            who will absolutely go around bad tooling and whip
+                            up something of their own if you give them a
+                            half-baked solution</span
+                        >. I like to demo prototypes made in real code, not clickthrough in
+                        Figma.
+                    </p>
+                    <p class="hero-desc">
+                        𖤓 Find me over at
+                        <a
+                            href="https://www.linkedin.com/in/soojison/"
+                            target="_blank"
+                            >linkedin</a
+                        >, <a href="mailto:soojison@protonmail.com">mail</a>
+                    </p>
+                </div>
+            </aside>
+
+            <main class="layout-right" id="layoutRight">
+                <div class="work-index" id="workIndex">
+                    <p class="section-label">Selected Work 𓆝 𓆟 𓆞 𓆝</p>
+                    <div class="card-list">
+                        <a class="card-cell" href="#cs-01" data-cs="cs-01">
+                            <div class="card-thumb">
+                                <img
+                                    src="images/cs01-cover.png"
+                                    alt=""
+                                />
+                                <span class="card-thumb-text"
+                                    >coded prototype</span
+                                >
+                            </div>
+                            <div class="card-cell-body">
+                                <div class="card-title">
+                                    01: Agent Development Workflow
+                                </div>
+                                <div class="card-sub">
+                                    From "why is nobody using this?" to "what if
+                                    we didn't need a UI at all?"
+                                </div>
+                            </div>
+                            <div class="card-cell-foot">
+                                <div class="hero-pills">
+                                    <span class="pill accent">
+                                        Coded Prototype
+                                    </span>
+                                    <span class="pill accent">
+                                        Technical Whole Workflow Design
+                                    </span>
+                                    <span class="pill accent">
+                                        User Research
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-cell" href="#cs-02" data-cs="cs-02">
+                            <div class="card-thumb">
+                                <img
+                                    src="images/cs02-cover.png"
+                                    alt=""
+                                />
+                                <span class="card-thumb-text"
+                                    >playground UI</span
+                                >
+                            </div>
+                            <div class="card-cell-body">
+                                <div class="card-title">
+                                    02: Prompt Playground
+                                </div>
+                                <div class="card-sub">
+                                    From hidden tool to platform hub — and the
+                                    strategy that retired an entire product
+                                </div>
+                            </div>
+                            <div class="card-cell-foot">
+                                <div class="hero-pills">
+                                    <span class="pill accent">
+                                        Product Strategy
+                                    </span>
+                                    <span class="pill accent">
+                                        Phased Rollout
+                                    </span>
+                                    <span class="pill accent">
+                                        Coded Prototype
+                                    </span>
+                                    <span class="pill accent"
+                                        >Technical Platform Design</span
+                                    >
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-cell" href="#cs-03" data-cs="cs-03">
+                            <div class="card-thumb">
+                                <img
+                                    src="images/cs03-cover.png"
+                                    alt=""
+                                />
+                                <span class="card-thumb-text"
+                                    >design system</span
+                                >
+                            </div>
+                            <div class="card-cell-body">
+                                <div class="card-title">
+                                    03: Platform Design System
+                                </div>
+                                <div class="card-sub">
+                                    Unifying 4 fractured products under one
+                                    design system
+                                </div>
+                            </div>
+                            <div class="card-cell-foot">
+                                <div class="hero-pills">
+                                    <span class="pill accent">
+                                        Design Systems
+                                    </span>
+                                    <span class="pill accent">
+                                        Component Library
+                                    </span>
+                                    <span class="pill accent">
+                                        Figma + React + Storybook
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-cell" href="#cs-04" data-cs="cs-04">
+                            <div class="card-thumb">
+                                <img
+                                    src="images/cs04-cover.png"
+                                    alt=""
+                                />
+                                <span class="card-thumb-text"
+                                    >code + design</span
+                                >
+                            </div>
+                            <div class="card-cell-body">
+                                <div class="card-title">
+                                    04: Designers as builders
+                                </div>
+                                <div class="card-sub">
+                                    Enabling the design team to ship code
+                                </div>
+                            </div>
+                            <div class="card-cell-foot">
+                                <div class="hero-pills">
+                                    <span class="pill accent">
+                                        Shipped React PRs
+                                    </span>
+                                    <span class="pill accent">
+                                        Process Change
+                                    </span>
+                                    <span class="pill accent">
+                                        Team Enablement
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-cell" href="#cs-05" data-cs="cs-05">
+                            <div class="card-thumb">
+                                <img src="images/cs05-cover.png" alt="" />
+                                <span class="card-thumb-text"
+                                    >skills discovery</span
+                                >
+                            </div>
+                            <div class="card-cell-body">
+                                <div class="card-title">
+                                    05: Skills Discovery
+                                </div>
+                                <div class="card-sub">
+                                    A self-serve end-to-end surface for the
+                                    agent builders
+                                </div>
+                            </div>
+                            <div class="card-cell-foot">
+                                <div class="hero-pills">
+                                    <span class="pill accent">
+                                        Platform UX
+                                    </span>
+                                    <span class="pill accent">
+                                        Self-Serve UI
+                                    </span>
+                                    <span class="pill accent">
+                                        Systems Thinking
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-page" id="aboutPage">
+                    <p class="section-label">About 𓍊𓋼𓍊𓋼𓍊</p>
+                    <div class="about-layout">
+                        <div class="about-text">
+                            <h2>
+                                Living at the intersection of<br/>Design & Code
+                            </h2>
+                            <p>
+                                I like the messy middle and reshaping the way we
+                                approach the problem:
+                            </p>
+                            <p>
+                                ① presenting research that
+                                contradicts the belief held by the project team<br/>
+                                ② sharing unpolished explorations before
+                                they're "ready" to gather early stakeholder feedback<br/>
+                                ③ putting fully interactive
+                                prototypes built in code in front of real users<br/>
+                                ④ pushing back on technical decisions when I understand the
+                                tradeoff (which I usually do)<br/>
+                                ⑤ owning the last 10% of polish that
+                                takes a UI from 90% to actually done
+                            </p>
+                            <p>
+                                You may think, wow, Data & AI Platform experience, huh?
+                               But truth be told,
+                                I never really aimed to go into data or AI. But
+                                I've been living inside the
+                                industry trends as they happened: the delivery
+                                crunch, the hype cycles, the stress of figuring
+                                out what's actually worth building versus what
+                                just sounds good in a press release. What do we
+                                ship now, what do we cut, what genuinely helps
+                                our users get their hands on something new
+                                versus what's just us chasing the wave. I
+                                shipped through all of it, and I want to help a team to
+                                name what's worth working towards.
+                            </p>
+                        </div>
+                        <div class="stats">
+                            <div class="stat">
+                                <div class="stat-n">4 yrs</div>
+                                <div class="stat-h">AI platform design</div>
+                                <div class="stat-d">
+                                    AI Workbench · GenOS · agent tooling ·
+                                    prompt systems
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-n">4 yrs</div>
+                                <div class="stat-h">
+                                    Data infrastructure dev-sign
+                                </div>
+                                <div class="stat-d">
+                                    Pipeline authoring · data lineage ·
+                                    observability tools
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-n">8 yrs</div>
+                                <div class="stat-h">At Intuit</div>
+                                <div class="stat-d">
+                                    Engineering → design, same platform
+                                    expertise
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-n">10k+</div>
+                                <div class="stat-h">Monthly active users</div>
+                                <div class="stat-d">
+                                    Across platform products I've contributed to
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="expertise">
+                        <p class="section-label">Expertise 𓇼</p>
+                        <div class="expertise-row">
+                            <div class="exp-item">
+                                <div class="exp-num">01</div>
+                                <h3 class="exp-title">Design Engineering</h3>
+                                <p class="exp-desc">
+                                    The time for handing off a spec and hoping is so over. I
+                                    can just open the PR and be done with it.
+                                </p>
+                            </div>
+                            <div class="exp-item">
+                                <div class="exp-num">02</div>
+                                <h3 class="exp-title">Prototyping in Code</h3>
+                                <p class="exp-desc">
+                                    Real, interactive prototypes built in hours,
+                                    not days, hosted links I put in front of
+                                    users, not clickthrough Figma. Validate the
+                                    idea before full implementation.
+                                </p>
+                            </div>
+                            <div class="exp-item">
+                                <div class="exp-num">03</div>
+                                <h3 class="exp-title">Front-end Craft</h3>
+                                <p class="exp-desc">
+                                    TypeScript, React, CSS, animation. An eye for
+                                    the details and the patience to own the last
+                                    10% — the 90%-to-100% that separates shipped
+                                    from polished.
+                                </p>
+                            </div>
+                            <div class="exp-item">
+                                <div class="exp-num">04</div>
+                                <h3 class="exp-title">Complex UX & Systems</h3>
+                                <p class="exp-desc">
+                                    Turning dense technical workflows into clear,
+                                    information-rich UIs — and the reusable
+                                    component libraries that let a team ship them
+                                    faster.
+                                </p>
+                            </div>
+                            <div class="exp-item">
+                                <div class="exp-num">05</div>
+                                <h3 class="exp-title">Beyond the UI</h3>
+                                <p class="exp-desc">
+                                    Not every dev tool needs a web UI. Sometimes
+                                    the right answer is a CLI, an IDE plugin, or
+                                    no UI at all — i'll design whichever surface
+                                    engineers actually live in.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="stack">
+                            <p class="stack-label">Build with</p>
+                            <div class="stack-groups">
+                                <div class="stack-group">
+                                    <span class="stack-cat">Code</span>
+                                    <div class="stack-tags">
+                                        <span class="stack-tag"
+                                            >TypeScript/React</span
+                                        >
+                                        <span class="stack-tag">Java/Springboot</span>
+                                        <span class="stack-tag">Storybook</span>
+                                        <span class="stack-tag">Git/CICD operations</span>
+                                    </div>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-cat">Design</span>
+                                    <div class="stack-tags">
+                                        <span class="stack-tag">Figma</span>
+                                        <span class="stack-tag"
+                                            >Design systems</span
+                                        >
+                                        <span class="stack-tag">Prototyping</span>
+                                        <span class="stack-tag"
+                                            >User research</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="stack-group">
+                                    <span class="stack-cat">AI</span>
+                                    <div class="stack-tags">
+                                        <span class="stack-tag"
+                                            >Claude Code</span
+                                        >
+                                        <span class="stack-tag">Cursor</span>
+                                        <span class="stack-tag"
+                                            >AI Assisted Research</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="experience">
+                        <p class="section-label">Experience ☕︎</p>
+                        <div class="role-list">
+                            <article class="role">
+                                <div class="role-meta">
+                                    <span class="role-dates"
+                                        >Aug 2024 — Present</span
+                                    >
+                                    <span class="role-loc">1 yr 11 mos</span>
+                                </div>
+                                <div class="role-content">
+                                    <h3 class="role-title">
+                                        Staff Product Designer
+                                        <span class="role-company"
+                                            >· Intuit</span
+                                        >
+                                    </h3>
+                                    <p class="role-desc">
+                                        Leading the design efforts for Intuit AI
+                                        Platform capabilities. Supporting the
+                                        full Generative AI development
+                                        lifecycle including agent and skills development, RAG pipeline management, and evaluation feedback.
+                                    </p>
+                                    <ul class="role-bullets">
+                                        <li>
+                                            Designed and shipped Model Discovery,
+                                            the LLM Leaderboard, and the LLM
+                                            Tracker — connecting scattered
+                                            capabilities so engineers can find the
+                                            right model by BU benchmark, learn how
+                                            and when to use it, and check its
+                                            platform status at a glance.
+                                        </li>
+                                        <li>
+                                            Set up and run a monthly design-system
+                                            governance sync with frontend
+                                            developers across platform teams
+                                            (multiple orgs and timezones) to
+                                            review requests, prioritize, and keep
+                                            one consistent look across every
+                                            surface many teams commit to.
+                                        </li>
+                                        <li>
+                                            Mentored a junior designer end-to-end
+                                            through the Prompt Playground MVP —
+                                            coaching through requirements,
+                                            critique, and scope, with handoff docs
+                                            that let the project run without me.
+                                        </li>
+                                        <li>
+                                            Drove the GenStudio + Prompt Playground
+                                            consolidation, aligning leadership and
+                                            stakeholders on a future-state vision
+                                            backed by user-survey results and
+                                            coded prototypes.
+                                        </li>
+                                        <li>
+                                            Authored and shipped components to the
+                                            A2D design system — Menu v2, Card,
+                                            Popover, Breadcrumb, AI icons, an
+                                            enhanced PageHeader — plus reusable
+                                            patterns (error handling, zero states)
+                                            and the repo's React 16 → 18 upgrade
+                                            <span class="role-ref"
+                                                >— see case study 03</span
+                                            >.
+                                        </li>
+                                        <li>
+                                            Conceived and coded the prototype for an
+                                            IDE plugin that brings agent setup into
+                                            Cursor/Claude Code; pitched it to PM,
+                                            eng, and the eng director, and it shipped
+                                            as a live capability plugin
+                                            <span class="role-ref"
+                                                >— see case study 01</span
+                                            >.
+                                        </li>
+                                        <li>
+                                            Designed the end-to-end Skills experience
+                                            — discover, bundle, consume — across
+                                            three registry/service teams, reusing
+                                            existing project permissions instead of
+                                            standing up a new admin surface
+                                            <span class="role-ref"
+                                                >— see case study 05</span
+                                            >.
+                                        </li>
+                                        <li>
+                                            Championed "designers can be builders":
+                                            merged React PRs into two product repos
+                                            replacing AI-generated lookalike UI with
+                                            real components, added an AGENTS.md
+                                            ruleset to keep future AI-assisted code
+                                            on-system, and wrote an enablement guide
+                                            that took the design team to 100%
+                                            prototyping adoption
+                                            <span class="role-ref"
+                                                >— see case study 04</span
+                                            >.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="role">
+                                <div class="role-meta">
+                                    <span class="role-dates"
+                                        >Nov 2022 — Jul 2024</span
+                                    >
+                                    <span class="role-loc">1 yr 9 mos</span>
+                                </div>
+                                <div class="role-content">
+                                    <h3 class="role-title">
+                                        Senior Product Designer
+                                        <span class="role-company"
+                                            >· Intuit</span
+                                        >
+                                    </h3>
+                                    <p class="role-desc">
+                                        Product designer on the A2D (AI +
+                                        Analytics + Data) org, leading the user
+                                        experience for a self-serve AI/ML web
+                                        app and providing design support for
+                                        Intuit's Big Bet 1: Revolutionize speed
+                                        to benefit.
+                                    </p>
+                                    <ul class="role-bullets">
+                                        <li>
+                                            Mocked end-to-end Figma flows for
+                                            users to create self-serve ML models
+                                            without heavy domain knowledge.
+                                        </li>
+                                        <li>
+                                            Enabled integration with NLP
+                                            capabilities at Intuit.
+                                        </li>
+                                        <li>
+                                            Led the design systems effort to
+                                            create a component library on Figma
+                                            and React.
+                                        </li>
+                                        <li>
+                                            Lead designer on Intuit's Generative
+                                            AI portal — enabling workers to
+                                            learn, engage, experiment, and
+                                            productionize GenAI capabilities
+                                            within Intuit products.
+                                        </li>
+                                        <li>
+                                            Streamlined the approval process for
+                                            Generative AI applications by
+                                            platformizing metric evaluation
+                                            suites against legal and security
+                                            requirements.
+                                        </li>
+                                        <li>
+                                            Oversaw the AI platform initiative
+                                            that streamlined all AI developer
+                                            workflows — model development,
+                                            application development with GenAI,
+                                            testing, approval.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="role">
+                                <div class="role-meta">
+                                    <span class="role-dates"
+                                        >Aug 2021 — Oct 2022</span
+                                    >
+                                    <span class="role-loc">1 yr 3 mos</span>
+                                </div>
+                                <div class="role-content">
+                                    <h3 class="role-title">
+                                        Senior Software Engineer
+                                        <span class="role-company"
+                                            >· Intuit</span
+                                        >
+                                    </h3>
+                                    <p class="role-desc">
+                                        On the A2D Platform team. Worked on
+                                        migrating the Superglue Platform to
+                                        MSaaS at Intuit.
+                                    </p>
+                                    <ul class="role-bullets">
+                                        <li>
+                                            Used Swagger and OpenAPI generators
+                                            to decouple a monolith codebase into
+                                            a microservice architecture.
+                                        </li>
+                                        <li>
+                                            Used Flyway database migration tools
+                                            to enable DB versioning and
+                                            per-service DB separation.
+                                        </li>
+                                        <li>
+                                            Built multi-env infra on Jenkins,
+                                            ArgoCD, Kubernetes, Docker.
+                                        </li>
+                                        <li>
+                                            Enabled Cypress tests for end-to-end
+                                            automation.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="role">
+                                <div class="role-meta">
+                                    <span class="role-dates"
+                                        >Aug 2019 — Jul 2021</span
+                                    >
+                                    <span class="role-loc">2 yrs</span>
+                                </div>
+                                <div class="role-content">
+                                    <h3 class="role-title">
+                                        Software Engineer II
+                                        <span class="role-company"
+                                            >· Intuit</span
+                                        >
+                                    </h3>
+                                    <p class="role-desc">
+                                        Full-stack developer on Intuit's
+                                        QuickData Platform.
+                                    </p>
+                                    <ul class="role-bullets">
+                                        <li>
+                                            Led the design of UI frameworks and
+                                            implementation of a team React
+                                            component library.
+                                        </li>
+                                        <li>
+                                            Led major feature developments
+                                            end-to-end — relational database
+                                            design, REST API design, UI design,
+                                            frontend, design docs.
+                                        </li>
+                                        <li>
+                                            Performed code reviews and installed
+                                            guardrails (PR templates etc.) to
+                                            speed up review.
+                                        </li>
+                                        <li>
+                                            Took point on prototyping the future
+                                            state of the project.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="role">
+                                <div class="role-meta">
+                                    <span class="role-dates"
+                                        >Aug 2018 — Jul 2019</span
+                                    >
+                                    <span class="role-loc">1 yr</span>
+                                </div>
+                                <div class="role-content">
+                                    <h3 class="role-title">
+                                        Software Engineer I
+                                        <span class="role-company"
+                                            >· Intuit</span
+                                        >
+                                    </h3>
+                                    <p class="role-desc">
+                                        Developed a self-serve debugging and
+                                        monitoring tool for data accuracy,
+                                        availability, and lineage
+                                        discoverability across data pipelines.
+                                    </p>
+                                    <ul class="role-bullets">
+                                        <li>
+                                            Full-stack across UX/UI (Figma,
+                                            Sketch, React), backend RESTful
+                                            services (Scala, Java), database
+                                            (MySQL, Slick, Elasticsearch), and
+                                            DevOps (Jenkins, AWS S3/EC2).
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="role">
+                                <div class="role-meta">
+                                    <span class="role-dates"
+                                        >May 2017 — Aug 2017</span
+                                    >
+                                    <span class="role-loc">4 mos</span>
+                                </div>
+                                <div class="role-content">
+                                    <h3 class="role-title">
+                                        Software Engineering Intern
+                                        <span class="role-company"
+                                            >· Intuit</span
+                                        >
+                                    </h3>
+                                    <p class="role-desc">
+                                        On Intuit's SBSEG Data Platform.
+                                    </p>
+                                    <ul class="role-bullets">
+                                        <li>
+                                            Kickstarted a nascent REST service
+                                            to deliver ML insights to customers,
+                                            using Agile development principles.
+                                        </li>
+                                        <li>
+                                            Parsed YAML files and modeled POJOs
+                                            to generate four different YAML
+                                            schemas.
+                                        </li>
+                                        <li>
+                                            Built a Spring Boot application
+                                            using Spring Cloud Config and
+                                            internal API tools.
+                                        </li>
+                                        <li>
+                                            Designed and implemented Data Access
+                                            Objects (DAOs) to fetch data from
+                                            DataStax Enterprise and Cassandra.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="education">
+                        <p class="section-label">Education ᨒ</p>
+                        <div class="role-list">
+                            <article class="role">
+                                <div class="role-meta">
+                                    <span class="role-dates"
+                                        >Grinnell College</span
+                                    >
+                                    <span class="role-loc">Iowa</span>
+                                </div>
+                                <div class="role-content">
+                                    <h3 class="role-title">Bachelor of Arts</h3>
+                                    <p class="role-desc">
+                                        Computer Science and Theatre &amp;
+                                        Dance<sup>*</sup>, concentration in
+                                        Linguistics.
+                                    </p>
+                                    <p class="role-footnote">
+                                        <sup>*</sup>yes, really. theatre. spent
+                                        years stage managing — coordinating
+                                        cast, crew, directors, and designers
+                                        with no authority over any of them
+                                        turned out to be most of what being a
+                                        designer is. i didn't expect that.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="work-content" id="workContent">
+                    <div class="cs">
+                        <div class="cs-top">
+                            <div>
+                                <p class="cs-num">
+                                    01 — Research, Strategy &amp; Prototyping
+                                </p>
+                                <h2>Agent Development Workflow</h2>
+                                <p class="cs-sub">
+                                    From "why is nobody using this?" to "what if
+                                    we didn't need a UI at all?"
+                                </p>
+                            </div>
+                            <div class="cs-tags">
+                                <span class="cs-tag"
+                                    >Lead Designer, Researcher, Prototype
+                                    Developer</span
+                                >
+                                <span class="cs-tag"
+                                    >Journey mapping · Behavioral
+                                    segmentation</span
+                                >
+                                <span class="cs-tag">58 survey responses</span>
+                                <span class="cs-tag"
+                                    >Coded prototype · Shipped as Day-0 Agent
+                                    Setup</span
+                                >
+                            </div>
+                        </div>
+                        <div class="img-ph" data-label="cs01-cover.png">
+                            <img
+                                src="images/cs01-cover.png"
+                                alt="Prompt Playground UI"
+                            />
+                        </div>
+                        <!-- PART 1 -->
+
+                        <div style="margin: 3rem 0 1rem">
+                            <p class="col-label">Part 1 — The Research</p>
+                        </div>
+
+                        <div class="cs-cols">
+                            <div>
+                                <p class="col-label">The Problem</p>
+                                <h3>Features existed. But for whom?</h3>
+                                <p>
+                                    The AI development platform covered
+                                    everything — model discovery, prompt
+                                    engineering, evaluation, fine tuning, agent
+                                    development, production deployment.
+                                    However, engineers who should have been power users
+                                    were churning after a single session. The
+                                    prevailing assumption on the team was that
+                                    we had a feature gap and we needed to add more features.
+                                    I wasn't sure that was quite right.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="col-label">The Approach</p>
+                                <h3>Segment first, then ask.</h3>
+                                <p>
+                                    I wrote a Python script to pull platform
+                                    analytics and split 1,474 users into
+                                    behavioral cohorts based on usage breadth,
+                                    frequency, and recency. Each cohort got its
+                                    own survey, because the question you ask a
+                                    power user is not the question you ask someone
+                                    who churned.
+                                </p>
+                                <p>
+                                    I collected 58 responses, with the largest
+                                    cohorts being Lapsed and Burst — exactly where
+                                    understanding churn mattered most.
+                                </p>
+                            </div>
+                        </div>
+
+                        <table class="segment-table">
+                            <caption>
+                                Four behavioral cohorts, each surveyed for a
+                                different reason.
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Segment</th>
+                                    <th scope="col">Behavior</th>
+                                    <th scope="col">Why survey them</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Power</th>
+                                    <td>
+                                        High breadth and frequency, active
+                                        recently
+                                    </td>
+                                    <td>
+                                        Understand advanced workflows and what
+                                        keeps them coming back
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Veteran</th>
+                                    <td>
+                                        Meaningful, repeated usage — but not
+                                        power-user levels
+                                    </td>
+                                    <td>
+                                        Understand mainstream workflows and what's
+                                        "fine but not amazing"
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Burst</th>
+                                    <td>
+                                        Sampled the product heavily but didn't
+                                        return
+                                    </td>
+                                    <td>
+                                        Understand early abandonment, usability
+                                        blockers, expectation gaps
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lapsed</th>
+                                    <td>
+                                        Meaningful activity once, then stopped
+                                        coming back
+                                    </td>
+                                    <td>
+                                        Understand why they left and what changed
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">What We Found</p>
+                                <h3>The cow tools problem.</h3>
+                                <p>
+                                    <a
+                                        href="https://en.wikipedia.org/wiki/Cow_tools"
+                                        target="_blank"
+                                        rel="noopener"
+                                        style="
+                                            color: var(--accent);
+                                            text-decoration: underline;
+                                            text-underline-offset: 3px;
+                                        "
+                                        >A Far Side cartoon</a
+                                    >
+                                    shows a cow displaying a set of tools it
+                                    made. They're bizarre and useless — because
+                                    a cow has no idea what a human actually
+                                    needs. The joke is that the maker and the
+                                    user are so misaligned that the output is
+                                    incomprehensible. That was AI Workbench. The
+                                    platform was built by engineers who
+                                    understood the infrastructure deeply, but
+                                    hadn't sufficiently understood how the
+                                    people using it actually worked — what they
+                                    were trying to accomplish, where they got
+                                    stuck, what "done" looked like to them. The
+                                    result was a set of tools that made sense
+                                    from the inside and baffled people on the
+                                    outside.
+                                </p>
+                                <p>
+                                    Over 90% of churned users were hands-on
+                                    engineers and AI/ML scientists — people with
+                                    strong opinions about their tools and zero
+                                    patience for unclear ROI. The real problem
+                                    was twofold: the value proposition was
+                                    invisible, and the learning curve was too
+                                    steep to survive first contact. The key
+                                    insight came from comparing power users to
+                                    churned users: power users hadn't succeeded
+                                    because they were more skilled or more
+                                    patient. They'd had early, guided exposure —
+                                    workshops, tech talks, white-glove
+                                    onboarding — that collapsed the time to
+                                    first value. Everyone else never got that
+                                    help, and the platform wasn't set up to
+                                    provide it at scale.
+                                </p>
+                                <p>
+                                    One more cut mattered: 71% of respondents
+                                    were mid-career. When that group says a tool
+                                    is "hard to understand," they usually don't
+                                    mean they can't figure out what it's for —
+                                    they mean it didn't justify the time it took
+                                    to figure out. They already know their
+                                    trade, they have strong tool preferences, and
+                                    they expect ROI inside a sprint, not
+                                    eventually. So the problem wasn't
+                                    intelligence or a feature gap. It was
+                                    time-to-first-value — which reframed the whole
+                                    solution: don't write more docs, collapse the
+                                    setup.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="img-grid">
+                            <div class="img-ph" data-label="cs01-role.png">
+                                <img
+                                    src="images/cs01-role.png"
+                                    alt="Respondent role breakdown: 60% SWE, ~90% technical roles overall"
+                                />
+                            </div>
+                            <div class="img-ph" data-label="cs01-seniority.png">
+                                <img
+                                    src="images/cs01-seniority.png"
+                                    alt="Respondent seniority breakdown: 71% mid-career"
+                                />
+                            </div>
+                        </div>
+                        <p class="caption under-image">
+                            The people churning were exactly who the platform was
+                            for — ~90% technical, 71% mid-career. Not the wrong
+                            audience. The wrong time-to-value.
+                        </p>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <h3>Adoption broke at two points, not one.</h3>
+                                <p>
+                                    Once I set the demographics aside, the
+                                    responses pointed to two distinct failures in
+                                    the lifecycle — not a single feature gap:
+                                </p>
+                                <ul class="finding-list">
+                                    <li>
+                                        <strong>Early:</strong> users couldn't
+                                        see the value proposition or how it fit
+                                        their workflow. With value unclear and
+                                        guidance thin, they never reached first
+                                        value and abandoned it.
+                                    </li>
+                                    <li>
+                                        <strong>Later:</strong> even users who
+                                        understood the product drifted away when
+                                        the value didn't persist or integrate
+                                        deeply enough into their evolving
+                                        responsibilities.
+                                    </li>
+                                </ul>
+                                <p>
+                                    These overlap, but together they name the real
+                                    problem: value clarity, onboarding, and
+                                    time-to-first-value — not technical capability
+                                    or user sophistication. External tools weren't
+                                    the reason people left; they were the default
+                                    people fell back to once AI Workbench's value
+                                    wasn't immediately apparent, especially for
+                                    newer Intuit employees.
+                                </p>
+                                <p>
+                                    And these two weren't equal. Value clarity was
+                                    the root cause; the docs and usability friction
+                                    only amplified it. Power users who saw the
+                                    value tolerated real friction to get their work
+                                    done — the ones who didn't never got far enough
+                                    to hit it. Fix usability alone and you'd still
+                                    lose people at the door.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pullquote">
+                            <p>
+                                "What do you want me to use it for? I don't
+                                understand outside of setting up prompts."
+                            </p>
+                            <cite
+                                >— Lapsed user, mid-career staff engineer</cite
+                            >
+                        </div>
+
+                        <div class="impact">
+                            <div class="impact-item">
+                                <div class="impact-n">1,474</div>
+                                <div class="impact-d">
+                                    Users segmented via custom Python analytics
+                                    script
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">58</div>
+                                <div class="impact-d">
+                                    Survey responses across 4 behavioral cohorts
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">Culture ↑</div>
+                                <div class="impact-d">
+                                    Dev managers began requesting user research
+                                    in planning — a first
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reflection">
+                            <p class="reflection-label">Reflection</p>
+                            <p>
+                                The hardest part wasn't the research — it was
+                                making the case that experience quality mattered
+                                on an internal tool. There's a pervasive
+                                assumption that because users are technical, UX
+                                can be deprioritized. This research was the
+                                evidence that assumption was wrong. I didn't
+                                stop at the first plausible cause either — before
+                                landing on time-to-first-value, I ruled out the
+                                easy explanations (they were too junior, they
+                                didn't get AI, external tools were simply better,
+                                power users just had more time). The data killed
+                                each one, which is what made the real cause hard
+                                to argue with. The most
+                                tangible signal: dev managers started requesting
+                                user research before starting planning cycles,
+                                not after. That hadn't happened before.
+                                Presenting findings in a way they could feel,
+                                not just read, was as important as the findings
+                                themselves.
+                            </p>
+                        </div>
+
+                        <!-- BRIDGE -->
+
+                        <div
+                            style="
+                                border-top: 1px solid var(--border);
+                                margin: 3.5rem 0;
+                            "
+                        ></div>
+
+                        <div style="margin: 0 0 1rem">
+                            <p class="col-label">Part 2 — The Answer</p>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <h3
+                                    style="
+                                        font-size: 1.45rem;
+                                        font-weight: 600;
+                                        letter-spacing: -0.02em;
+                                        line-height: 1.25;
+                                        margin-bottom: 1rem;
+                                        color: var(--text);
+                                    "
+                                >
+                                    After the research, I decided to go through
+                                    the process myself.
+                                </h3>
+                                <p>
+                                    During a hackathon week, I tried to build an
+                                    agent from scratch. I'm a former software
+                                    engineer, I'd worked on the agent starter
+                                    kit, I knew the platform. I assumed it would
+                                    be straightforward.
+                                </p>
+                                <p>
+                                    It wasn't. I cloned the wrong repo. The
+                                    documentation sent me to three different
+                                    surfaces in the wrong order. I spent time
+                                    manually copying values between systems that
+                                    clearly already knew about each other. I had
+                                    to download a third-party API client just to
+                                    send a test request. I dug through Slack to
+                                    find workarounds other people had written.
+                                    After a few hours of this, I gave up.
+                                </p>
+                                <p>
+                                    If I couldn't get through it with all that
+                                    context, the problem wasn't that users
+                                    needed better documentation or a friendlier
+                                    UI. The assumption that this whole workflow
+                                    had to happen across multiple disconnected
+                                    websites was the problem.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="img-ph"
+                            data-label="cs01-agent-flow-today.png"
+                        >
+                            <img
+                                src="images/cs01-agent-flow-today.png"
+                                alt="FigJam agent setup flow"
+                            />
+                        </div>
+                        <p class="caption under-image">
+                            Massive, massive flow just to send a prompt to the agent locally.
+                        </p>
+
+                        <div class="pullquote">
+                            <p>
+                                "most internal tools are hard to adopt because we
+                                can't use external ai to help us figure out how to
+                                use them... if i cannot use ai to learn how to use
+                                it, i'll try to find other tool to use out of
+                                Intuit."
+                            </p>
+                            <cite
+                                >— Burst user, on why AI-unfriendly tooling loses
+                                to external alternatives</cite
+                            >
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The Reframe</p>
+                                <h3>
+                                    What if developers never had to leave their
+                                    terminal?
+                                </h3>
+                                <p>
+                                    Part of the problem was execution — the
+                                    platform is built across multiple teams and
+                                    it shows. But even a well-executed version
+                                    of the same approach would still require
+                                    developers to leave their natural
+                                    environment to configure things in a
+                                    browser. Developers work in their IDE, their
+                                    terminal, their AI coding assistant. That's
+                                    where they're fast and in context.
+                                </p>
+                                <p>
+                                    As a former engineer, I also recognized the
+                                    solution pattern. Tools like
+                                    <code
+                                        style="
+                                            font-family: var(--mono);
+                                            font-size: 0.85em;
+                                            background: var(--bg2);
+                                            padding: 0.15em 0.5em;
+                                            border-radius: 0;
+                                            border: 1px solid var(--border);
+                                        "
+                                        >create-react-app</code
+                                    >
+                                    exist to collapse complex setup into a
+                                    single command so developers can skip the
+                                    scaffolding and get to the actual work.
+                                    There was no reason agent development at
+                                    Intuit couldn't follow the same model.
+                                </p>
+                                <p>
+                                    I pitched the idea of building the workflow
+                                    as a plugin for AI coding assistants rather
+                                    than a new surface — where a developer types
+                                    "I want to build an agent" into Claude, and
+                                    Claude handles the entire setup: service
+                                    registration, IDPS configuration, starter
+                                    kit scaffolding, skills installation, prompt
+                                    loading, local testing, evals, and Git. No
+                                    DevPortal. No AI Workbench. No context
+                                    switching.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The Prototype</p>
+                                <h3>
+                                    Built in Claude Code. Simulates a
+                                    Claude-like interface. Yes, it's meta.
+                                </h3>
+                                <p>
+                                    To make the idea concrete, I built a coded
+                                    prototype that simulates what the experience
+                                    looks like in a terminal — using Claude Code
+                                    to build something that looks and behaves
+                                    like Claude. It walks through the full flow:
+                                    prerequisite detection, environment
+                                    scaffolding, skills discovery via natural
+                                    language, prompt loading, local testing with
+                                    trace output, and quick evals against
+                                    Langfuse data.
+                                </p>
+                                <p>
+                                    I recorded a demo walkthrough that became
+                                    the spec — the PM wrote the PRD from it, and
+                                    the workflow shipped as Day-0 Agent Setup
+                                    (more on that below).
+                                </p>
+                            </div>
+                        </div>
+
+                        <figure class="cs-video">
+                            <div class="cs-video-frame" id="protoVideoFrame">
+                                <video
+                                    id="protoVideo"
+                                    src="images/agent-devkit.mp4"
+                                    poster="images/agent-devkit-poster.jpg"
+                                    playsinline
+                                    controls
+                                    preload="metadata"
+                                    aria-label="Coded prototype walkthrough: building an agent from the terminal"
+                                ></video>
+                                <button
+                                    type="button"
+                                    class="cs-video-play"
+                                    id="protoVideoPlay"
+                                    aria-label="Play prototype walkthrough"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <span>Watch the prototype</span>
+                                </button>
+                            </div>
+                            <figcaption class="caption">
+                                The coded prototype with
+                                prerequisite detection, scaffolding,
+                                natural-language skills discovery, local testing,
+                                and evals, all from the terminal.
+                            </figcaption>
+                        </figure>
+
+                        <div class="pullquote">
+                            <p>
+                                "Rather than building a new surface, we are
+                                bringing the agent development workflow directly
+                                into agent-assisted development surfaces such as
+                                Claude or Cursor."
+                            </p>
+                            <cite
+                                >— From the PRD, based on the prototype
+                                demo</cite
+                            >
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The Outcome</p>
+                                <h3>From prototype to a shipped plugin.</h3>
+                                <p>
+                                    The prototype convinced the team. I
+                                    presented the walkthrough directly to the
+                                    developers building the IDE plugin layer,
+                                    and the PM used it to write the PRD. The
+                                    workflow shipped as
+                                    <strong>Day-0 Agent Setup</strong> — now
+                                    live in the DevAssist Plugin Registry and
+                                    the Intuit Desktop app. It handles
+                                    Experience ID provisioning, ASK service
+                                    configuration, and identity/permissions
+                                    setup so engineers can go from zero to a
+                                    running agent without manual cross-tool
+                                    wiring.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="impact">
+                            <div class="impact-item">
+                                <div class="impact-n">Shipped</div>
+                                <div class="impact-d">
+                                    Day-0 Agent Setup is live in the DevAssist
+                                    Plugin Registry &amp; Intuit Desktop app
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">Zero</div>
+                                <div class="impact-d">
+                                    New surfaces required — the workflow lives
+                                    inside tools developers already use
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">2–6 wks → hrs</div>
+                                <div class="impact-d">
+                                    Target time-to-first-agent collapsed from
+                                    weeks of cross-tool setup to a single
+                                    command
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reflection">
+                            <p class="reflection-label">Reflection</p>
+                            <p>
+                                The thing I had to get over first was whether
+                                "no UI" counted as a design output. There's a
+                                strong pull in product design toward building
+                                screens — it's visible, it's tangible, it's easy
+                                to show in a review. But the developers we were
+                                designing for don't live in browsers. They live
+                                in terminals and editors. Once I accepted that
+                                meeting them there was the right call, the
+                                direction became obvious. The harder part was
+                                making that case to people who were expecting a
+                                Figma file.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cs">
+                        <div class="cs-top">
+                            <div>
+                                <p class="cs-num">
+                                    02 — Product Design &amp; Strategy
+                                </p>
+                                <h2>Prompt Playground</h2>
+                                <p class="cs-sub">
+                                    From hidden tool to platform hub — and the
+                                    strategy that retired an entire product
+                                </p>
+                            </div>
+                            <div class="cs-tags">
+                                <span class="cs-tag"
+                                    >Lead Designer (v1–v4), Product
+                                    Strategist</span
+                                >
+                                <span class="cs-tag">React prototype</span>
+                                <span class="cs-tag">FMH research</span>
+                                <span class="cs-tag">All phases shipped</span>
+                            </div>
+                        </div>
+
+                        <div class="img-ph" data-label="cs02-playground-ui.png">
+                            <img
+                                src="images/cs02-cover.png"
+                                alt="Prompt Playground UI"
+                            />
+                        </div>
+
+                        <div class="cs-cols">
+                            <div>
+                                <p class="col-label">The Problem</p>
+                                <h3>Developers were building around us.</h3>
+                                <p>
+                                    At Intuit's AI platform, developers need to
+                                    create a GenOS Use Case before building AI
+                                    features. A core part of that is developing
+                                    and refining prompts — but the existing
+                                    Prompt Registry was just a place to save a
+                                    finished prompt. It didn't help anyone craft
+                                    one.
+                                </p>
+                                <p>
+                                    In early FMH sessions, one developer told us
+                                    he'd abandoned the existing tooling entirely
+                                    for a local Python environment — because it
+                                    couldn't handle prompt segments, variables,
+                                    or different message types.
+                                    <strong
+                                        >He wasn't an edge case. He was exactly
+                                        the user we needed to serve.</strong
+                                    >
+                                </p>
+                            </div>
+                            <div>
+                                <p class="col-label">V1 & Handoff</p>
+                                <h3>
+                                    Design it, document it, hand it off well.
+                                </h3>
+                                <p>
+                                    I led the initial version — structured
+                                    prompt editing, model config controls,
+                                    output viewing with trace/debugger, and
+                                    registry save flow — through multiple FMH
+                                    sessions with prompt engineers before
+                                    handing the project to a junior designer.
+                                </p>
+                                <p>
+                                    Rather than a cold handoff, I wrote a
+                                    comprehensive onboarding doc covering FMH
+                                    findings, design rationale, and component
+                                    guidance. I continued coaching him through
+                                    critique as he carried v1 forward.
+                                    <strong
+                                        >The doc became a reusable artifact
+                                        capturing institutional knowledge that
+                                        would otherwise have lived only in my
+                                        head.</strong
+                                    >
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">
+                                    Iterating Through v2, v3, v4
+                                </p>
+                                <h3>
+                                    Four versions, each grounded in specific
+                                    feedback.
+                                </h3>
+                                <p>
+                                    V2 reorganized the layout and refined the
+                                    save flow based on dev review feedback. V3
+                                    responded to prompt engineering teams who
+                                    needed bulk output support and comparison
+                                    views between runs and versions. V4 resolved
+                                    open questions around first-time user flows,
+                                    evaluation integration, and RAI review
+                                    requirements for prompt changes. Each
+                                    iteration was driven by a specific signal —
+                                    not aesthetic preference.
+                                </p>
+                                <p>
+                                    To support the handoff to engineering, I
+                                    created a detailed feature breakdown
+                                    categorizing every capability into
+                                    <strong
+                                        >MVP, Target State, and Nice to
+                                        Have</strong
+                                    >
+                                    — giving PM and engineering a shared
+                                    language for prioritization. This prevented
+                                    scope from ballooning before the initial
+                                    release. Key MVP features shipped in Dec
+                                    '24.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="img-grid">
+                            <div
+                                class="img-ph"
+                                data-label="cs02-feature-breakdown.png"
+                            >
+                                <img
+                                    src="images/cs02-feature-breakdown.png"
+                                    alt="MVP feature breakdown"
+                                />
+                            </div>
+                            <div
+                                class="img-ph"
+                                data-label="cs02-v3-comparison.png"
+                            >
+                                <img
+                                    src="images/cs02-v3-comparison.png"
+                                    alt="V3 comparison view"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="cs-cols">
+                            <div>
+                                <p class="col-label">The Strategic Pivot</p>
+                                <h3>Two products solving the same problem.</h3>
+                                <p>
+                                    After v1 shipped, I recognized a larger
+                                    issue: GenStudio — a separate product with
+                                    its own PM and codebase — had
+                                    <strong>10,000+ monthly users</strong> with
+                                    42% still using its Prompt Design feature.
+                                    Two tools, overlapping needs, no
+                                    coordination. The platform was fracturing.
+                                </p>
+                                <p>
+                                    Together with my PM and dev manager, I
+                                    authored a
+                                    <strong
+                                        >five-phase consolidation plan</strong
+                                    >
+                                    to fold GenStudio's capabilities into AIW
+                                    and eventually sunset it as a standalone
+                                    product — rather than just move Playground
+                                    to the global level.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="col-label">
+                                    Research Before Deprecating
+                                </p>
+                                <h3>
+                                    Don't kill something people actually need.
+                                </h3>
+                                <p>
+                                    Before recommending deprecation, I surveyed
+                                    323 Prompt Design users (41 responses, 12.6%
+                                    response rate). Key findings: the user base
+                                    was nearly split between technical and
+                                    non-technical users — broader than
+                                    Playground served. Simplicity was the
+                                    overwhelming reason users preferred
+                                    GenStudio. The diff feature rated highest at
+                                    4.27/5. Only 6 of 40 had ever used Prompt
+                                    Playground.
+                                </p>
+                                <p>
+                                    <strong
+                                        >This meant the migration couldn't be a
+                                        lift-and-shift.</strong
+                                    >
+                                    The new Global Playground had to serve both
+                                    audiences and close the feature gap before
+                                    GenStudio's Prompt Design could be
+                                    deprecated.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">FMH Findings</p>
+                                <h3>What real users actually said.</h3>
+                                <p>
+                                    I conducted FMH sessions with top GenStudio
+                                    users to get qualitative depth before
+                                    finalizing the consolidation approach. A
+                                    senior SWE building agents had given up on
+                                    the Playground entirely: his prompts were
+                                    tied to tools that neither product
+                                    supported. The CK prompt engineering team
+                                    had lost three weeks of work to a history
+                                    bug and a stray system message — and had
+                                    turned to a third-party tool for multi-agent
+                                    flows because nothing at Intuit could chain
+                                    prompts across agents.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pullquote">
+                            <p>
+                                "With most of the company moving to agents,
+                                simple prompts aren't enough anymore."
+                            </p>
+                            <cite>— Senior SWE, agent development team</cite>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">Prototyping Approach</p>
+                                <h3>A real link, not a Figma flow.</h3>
+                                <p>
+                                    Instead of a clickthrough prototype, I built
+                                    a fully interactive React app hosted on
+                                    GitHub Pages and shared the link directly in
+                                    FMH sessions. Users could actually interact
+                                    with it — feedback reflected real use
+                                    patterns, not reactions to a predetermined
+                                    path. I then translated it into design
+                                    system components and broke the feature set
+                                    into three phased releases.
+                                    <strong
+                                        >All three phases are now
+                                        shipped.</strong
+                                    >
+                                </p>
+                                <p>
+                                    The v2 Playground and consolidation vision
+                                    were also presented at Intuit's AI Share Out
+                                    &amp; Architecture forum with leadership
+                                    present, and at Pre-GED workshops across
+                                    multiple orgs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="img-ph"
+                            data-label="cs02-react-prototype.png"
+                        >
+                            <img
+                                src="images/cs02-react-prototype.png"
+                                alt="React prototype"
+                            />
+                        </div>
+
+                        <div class="impact">
+                            <div class="impact-item">
+                                <div class="impact-n">2×</div>
+                                <div class="impact-d">
+                                    User growth in weeks following the v2
+                                    relaunch
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">~200</div>
+                                <div class="impact-d">
+                                    Users with 10+ sessions — strong habitual
+                                    adoption signal
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">5 phases</div>
+                                <div class="impact-d">
+                                    Consolidation plan in active execution
+                                    across two product teams
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reflection">
+                            <p class="reflection-label">Reflection</p>
+                            <p>
+                                The most useful thing I did on this project
+                                wasn't a design — it was the realization that we
+                                had two products solving the same problem with
+                                no plan to reconcile them. Once that was the
+                                question, the answer ("merge them, and here's
+                                the plan") was easy to see. The screens
+                                themselves were the cheap part.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cs">
+                        <div class="cs-top">
+                            <div>
+                                <p class="cs-num">03 — Design Systems</p>
+
+                                <h2>Platform Design System</h2>
+                                <p class="cs-sub">
+                                    Unifying 4 fractured products under one
+                                    design system
+                                </p>
+                            </div>
+                            <div class="cs-tags">
+                                <span class="cs-tag"
+                                    >Lead Designer + Component Developer</span
+                                >
+                                <span class="cs-tag"
+                                    >Figma library + Storybook</span
+                                >
+                                <span class="cs-tag"
+                                    >4 products, cross-platform</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="img-ph" data-label="cs03-cover.png">
+                            <img
+                                src="images/cs03-cover.png"
+                                alt="Design system overview"
+                            />
+                        </div>
+
+                        <div class="cs-cols">
+                            <div>
+                                <p class="col-label">The Problem</p>
+                                <h3>Four teams building the same things.</h3>
+                                <p>
+                                    Across four distinct products, designers
+                                    were recreating components from scratch.
+                                    Developers were writing new code to
+                                    approximate a system that didn't fully
+                                    exist. As AI-assisted development grew, that
+                                    duplication compounded — teams were
+                                    generating redundant code to produce
+                                    components that should have been
+                                    standardized already.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="col-label">My Role</p>
+                                <h3>Designer and component author.</h3>
+                                <p>
+                                    Because I came from a development
+                                    background, I wrote the code myself rather
+                                    than handing specs to engineers to
+                                    interpret. That meant design decisions were
+                                    grounded in what was technically sound, not
+                                    just what looked right in Figma. I also set
+                                    up the governance process: a regular working
+                                    cadence with frontend developers across
+                                    platform teams to review requests,
+                                    prioritize, and keep the system maintained.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="img-grid">
+                            <div
+                                class="img-ph"
+                                data-label="cs03-figma-library.png"
+                            >
+                                <img
+                                    src="images/cs03-figma-library.png"
+                                    alt="Component library in Figma"
+                                />
+                            </div>
+                            <div
+                                class="img-ph"
+                                data-label="cs03-storybook-menu.png"
+                            >
+                                <img
+                                    src="images/cs03-storybook-menu.png"
+                                    alt="Menu component in Storybook"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">
+                                    Spotlight: The Menu Component
+                                </p>
+                                <h3>
+                                    One component that handles the majority of
+                                    use cases.
+                                </h3>
+                                <p>
+                                    Intuit's design system already had a menu
+                                    component — but it was a simple dropdown: a
+                                    list of items, and at best a checkmark next
+                                    to one. No radio buttons, no icons, no
+                                    submenus, no search, no section grouping.
+                                    For the kind of complex data operations our
+                                    products needed, every team was patching
+                                    around it independently and producing
+                                    inconsistent results.
+                                </p>
+                                <p>
+                                    Rather than keep patching, I designed and
+                                    coded a shared version that covered the real
+                                    use cases: checkboxes, icons, submenus,
+                                    integrated search, section headers, and full
+                                    open/close interaction behaviors. One
+                                    component, used across all four products.
+                                </p>
+                                <p>
+                                    To get teams to use it, I made it the
+                                    obvious choice. Every spec I produce is
+                                    annotated with the relevant component so a
+                                    developer opening it doesn't have to ask —
+                                    it's already called out.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">Recent Shipping</p>
+                                <h3>
+                                    The system is alive, not a one-time launch.
+                                </h3>
+                                <p>
+                                    Over the past year I've shipped
+                                    <strong
+                                        >Menu v2, Card, Popover, Breadcrumb, an
+                                        expanded AI icon set, and a redesigned
+                                        PageHeader</strong
+                                    >, plus a long tail of fixes driven by real
+                                    in-product usage rather than Storybook edge
+                                    cases. I also led the
+                                    <strong>React 16.13 → 18.3 upgrade</strong>
+                                    for the repo so component authors weren't
+                                    blocked by the older runtime.
+                                </p>
+                                <p>
+                                    Most of these came directly out of pain we
+                                    were seeing in product reviews — components
+                                    that worked in isolation but broke when
+                                    composed inside an actual page. Pulling
+                                    those fixes into the system meant the next
+                                    team to hit the same problem just got the
+                                    fix for free.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="impact">
+                            <div class="impact-item">
+                                <div class="impact-n">React 18</div>
+                                <div class="impact-d">
+                                    Repo-wide runtime upgrade so component
+                                    authors aren't blocked on old infra
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">6+ new</div>
+                                <div class="impact-d">
+                                    Components shipped this year: Menu v2, Card,
+                                    Popover, Breadcrumb, PageHeader, SearchResultRow
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">4</div>
+                                <div class="impact-d">
+                                    Products using the system, reducing
+                                    duplicated development work
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reflection">
+                            <p class="reflection-label">Reflection</p>
+                            <p>
+                                Building the components is the straightforward
+                                part. Getting teams to actually use them is a
+                                different problem — one that's more about trust
+                                and convenience than quality. Annotating every
+                                spec with the relevant component was one
+                                concrete lever: it meant adoption didn't depend
+                                on developers remembering to check the system.
+                                But that only works at the point of handoff.
+                                What I'd invest more in next time is making the
+                                system's value visible earlier — tracking usage,
+                                surfacing time saved, and giving contributors a
+                                sense of ownership over what they helped build.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cs">
+                        <div class="cs-top">
+                            <div>
+                                <p class="cs-num">04 — Designers as Builders</p>
+                                <h2>Designers shipping code</h2>
+                                <p class="cs-sub">
+                                    If we can fix it ourselves, we should — and
+                                    we should make the next person's fix easier
+                                    too
+                                </p>
+                            </div>
+                            <div class="cs-tags">
+                                <span class="cs-tag"
+                                    >Designer + Contributor</span
+                                >
+                                <span class="cs-tag"
+                                    >React PRs across two product repos</span
+                                >
+                                <span class="cs-tag"
+                                    >AGENTS.md ruleset · IDS bootstrap
+                                    template</span
+                                >
+                                <span class="cs-tag"
+                                    >Designer enablement guide</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="cs-cols">
+                            <div>
+                                <p class="col-label">The Problem</p>
+                                <h3>The handoff loop was the bottleneck.</h3>
+                                <p>
+                                    Two patterns kept showing up across the
+                                    Platform org. First, developers using AI
+                                    were producing code that only visually
+                                    approximated the design system but didn't
+                                    actually use it. Even within the same repo,
+                                    there were multiple custom-written instances
+                                    of the same component, and duplicated styles and
+                                    hardcoded colors were making reuse difficult. Second,
+                                    designers wanting to use the new AI tools to prototype
+                                    or contribute were blocked due to the lack of knowledge.
+                                   The existing paved-path were the
+                                   developers' domain, allowing only for
+                                   developing production ready code with heavy baggage,
+                                   not quick prototypes that designers wanted.
+                                </p>
+                                <p>
+                                    Both problems funneled into the same
+                                    backlog: designer files a ticket, designer
+                                    waits, developer may or may not fix it later,
+                                    and the design debt continues to accumulate.
+                                    The trust between the functions was starting
+                                   to fall apart, so I put together a way to enable the designers
+                                   to contribute to the codebase in a meaninful way.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="col-label">The Approach</p>
+                                <h3>
+                                    Fix it in the repo. Then prevent the next
+                                    one.
+                                </h3>
+                                <p>
+                                    To address the immediate drift in the products
+                                    that I worked in, I leveraged Claude
+                                    to address the visual inconsistencies.
+                                    While I had the development knowledge to do it myself,
+                                    leveraging Claude allowed me to scan the entire repo
+                                    and fix the repeated mistakes wholesale. I only had to
+                                    confirm and redirect the agent in the right direction
+                                    using my knowledge. I have opened several pull
+                                    requests directly two large product repos owned by
+                                    different teams. The PRs replaced AI-generated
+                                    lookalike code with real design system components,
+                                    pulled repeated patterns into shared components, and
+                                    surfaced platform features the original
+                                    implementation had buried. The cleanup made the
+                                    next release cheaper for the developers, not
+                                    just nicer for the users.
+                                </p>
+                                <p>
+                                    But individual PRs only fix individual
+                                    problems. To ensure any new contribution from
+                                    a developer or designer (or any "builder") conforms
+                                   to the standards when using AI agents, I added a
+                                   ruleset to the repo so that the design system patterns are followed by default.
+                                   The rule now lives with the code, not only in someone's head that
+                                   it becomes a bottleneck during review cycles.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pullquote">
+                            <p>
+                                "Because the rule is set for the agents, the
+                                individual developers don't have to learn or be
+                                aware of the design rules — they can focus on
+                                the feature."
+                            </p>
+                            <cite>— From the AGENTS.md rationale</cite>
+                        </div>
+
+                        <figure class="code-block">
+                            <div class="code-block-bar">
+                                <span class="code-dot code-dot-r"></span>
+                                <span class="code-dot code-dot-y"></span>
+                                <span class="code-dot code-dot-g"></span>
+                                <span class="code-block-name">AGENTS.md</span>
+                            </div>
+                            <pre><code><span class="c-cm"># Shared rules for AI coding assistants (Claude</span>
+<span class="c-cm"># Code, Cursor, Codex, etc.). Scope: design</span>
+<span class="c-cm"># system usage and tokens only.</span>
+
+<span class="c-cm">## Design System Priority</span>
+<span class="c-cm"># Search in this order — each tier owns a</span>
+<span class="c-cm"># different class of component.</span>
+1. <span class="c-str">@ids-ts/*</span>  — buttons, inputs, modals, typography
+2. <span class="c-str">@qbds/*</span>    — trowser, toggle, toast
+3. <span class="c-str">@a2d-ds/*</span>  — page headers, cards, tables, badges
+4. <span class="c-str">@cgds/*</span>    — app-level components
+5. Custom styled-component — only if nothing fits
+
+<span class="c-cm">## Never build custom when a DS component exists</span>
+<span class="c-cm">// Wrong — will be flagged in review</span>
+const CustomButton = styled.button`...`;
+
+<span class="c-cm">## Use design tokens, not hardcoded values</span>
+color: <span class="c-str">var(--color-text-primary)</span>;   <span class="c-cm">// right</span>
+color: #1f2937;                    <span class="c-cm">// wrong</span>
+
+<span class="c-cm"># The rule lives with the code, not in a</span>
+<span class="c-cm"># reviewer's head — so review isn't the bottleneck.</span></code></pre>
+                        </figure>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">One source, every editor</p>
+                                <h3>
+                                    Different people, different tools, same
+                                    rules.
+                                </h3>
+                                <p>
+                                    People across the company use different AI
+                                    editors — Cursor, Claude Code, Codex. Each
+                                    reads its own config file, so a rule written
+                                    for one is invisible to the others. Rather
+                                    than maintain three drifting copies, I kept
+                                    the full ruleset in
+                                    <strong>AGENTS.md</strong> as the single
+                                    source of truth and made
+                                    <strong>CLAUDE.md</strong> and
+                                    <strong>.cursorrules</strong> thin pointers
+                                    back to it. Update the rules once; every
+                                    editor stays in sync.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">Designer Enablement</p>
+                                <h3>The guide and the bootstrap repo.</h3>
+                                <p>
+                                    To get the rest of the design org unstuck on
+                                    prototyping, I wrote an end-to-end setup
+                                    guide covering the company-internal paved
+                                    paths, the right modes of operation, and the
+                                    gotchas you only know from years of shipping
+                                    at Intuit. I shared it with the broader
+                                    Design organization and ran 1:1 setup sessions with
+                                    designers and PMs who needed a hand getting
+                                    over the first hump of not only learning how to
+                                    code but also learning how to interact with an AI agent.
+                                </p>
+                                <div class="artifact">
+                                    <span class="artifact-icon" aria-hidden="true"
+                                        >❯_</span
+                                    >
+                                    <div class="artifact-body">
+                                        <p class="artifact-title">
+                                            Enablement guide — non-paved-path
+                                            prototyping, end to end
+                                        </p>
+                                        <p class="artifact-desc">
+                                            Setup, modes of operation, and the
+                                            Intuit-specific gotchas you only learn
+                                            from years of shipping. Shared
+                                            org-wide, paired with 1:1 sessions →
+                                            <strong>100% team adoption</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <figure class="doc-thumb">
+                                    <img
+                                        src="images/gdocs-guide.png"
+                                        alt="Enablement guide document — multi-section table of contents covering Figma Make, Cursor, Claude Code, and contributing to the codebase"
+                                    />
+
+                                </figure>
+                                <figcaption class="caption">
+                                    Shareable doc for everyone in the org + outside of the org!
+                                </figcaption>
+                                <p>
+                                    The reason this is hard in the first place:
+                                    paved-path repos inherit the design system's
+                                    styles and tokens from a shared CDN stylesheet
+                                    that every UI repo already loads. Spin up a
+                                    blank create-react-app and you get none of
+                                    it — the components import fine but render
+                                    unstyled and wrong, because the tokens they
+                                    depend on were never delivered.
+                                </p>
+                                <p>
+                                    So I built a
+                                    <strong>prototype bootstrap repo</strong>
+                                    that wires the CDN token stylesheets and all
+                                    the dependencies up front, pointed at the
+                                    internal component registry. From the first
+                                    prompt, the user can just tell the agent "use the
+                                    design system button" and it resolves the right
+                                    component, correctly styled — no missing-styles
+                                    surprises, no token-URL spelunking.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">Why this matters</p>
+                                <h3>3x-ing the team, not just fixing tickets.</h3>
+                                <p>
+                                    Shipping PRs was only half of it. The bigger
+                                    unlock was changing how the team prototypes.
+                                    Instead of Figma clickthroughs, designers now
+                                    build real coded prototypes with AI — complete
+                                    paths, real interactions, wired in minutes
+                                    instead of the hours it takes to fake every
+                                    click target in Figma.
+                                </p>
+                                <p>
+                                    That changes what a prototype is <em>for</em>.
+                                    It's real enough to put in front of customers
+                                    and watch them actually use it, not click a
+                                    prescribed path. And because it's built on the
+                                    real design system, developers can lift and
+                                    ship it rather than rebuild it from a static
+                                    file — so the design-to-dev handoff stops being
+                                    a rewrite.
+                                </p>
+                                <p>
+                                    The point was never "designers should pick up
+                                    tickets." It was to get the whole team into the
+                                    3x spirit — remove the structural blockers, and
+                                    everyone moves faster without working harder.
+                                    The A2D Design team hit
+                                    <strong>100% adoption</strong>, every designer
+                                    producing meaningful, IDS-based, customer-ready
+                                    prototypes inside their existing workflow.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="impact">
+                            <div class="impact-item">
+                                <div class="impact-n">20+ PRs</div>
+                                <div class="impact-d">
+                                    Merged across two different repos to clean up design + componentization
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">AGENTS.md</div>
+                                <div class="impact-d">
+                                    Ruleset added so future AI-assisted
+                                    contributions follow IDS patterns by default
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">100%</div>
+                                <div class="impact-d">
+                                    A2D Design team adoption of the IDS
+                                    prototype setup &amp; bootstrap repo
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reflection">
+                            <p class="reflection-label">Reflection</p>
+                            <p>
+                                The default move in design is to write the nit,
+                                file the ticket, and trust the loop. But the
+                                loop is slow, and the design system drifts while
+                                it runs. Picking up the code wasn't a hero move
+                                — it was the realization that for a class of
+                                problem, the cheapest fix is in the repo. The
+                                AGENTS.md is the part I'm most proud of: a
+                                single PR that fixes a recurring problem for
+                                every contributor after me.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cs">
+                        <div class="cs-top">
+                            <div>
+                                <p class="cs-num">
+                                    05 — Product Design, Platform
+                                </p>
+                                <h2>Skills Discovery</h2>
+                                <p class="cs-sub">
+                                    A self-serve surface for the people building
+                                    agents — and the people governing what those
+                                    agents can do
+                                </p>
+                            </div>
+                            <div class="cs-tags">
+                                <span class="cs-tag"
+                                    >Sole designer, end-to-end</span
+                                >
+                                <span class="cs-tag"
+                                    >Cross-team product work</span
+                                >
+                                <span class="cs-tag">Live in AI Workbench</span>
+                                <span class="cs-tag"
+                                    >Discover · Bundle · Consume</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="cs-cols">
+                            <div>
+                                <p class="col-label">The Problem</p>
+                                <h3>
+                                    The platform shipped capabilities. Nobody
+                                    could find them.
+                                </h3>
+                                <p>
+                                    Skills — folders of instructions, scripts,
+                                    and resources that agents load on demand to
+                                    do real work — became the way Intuit
+                                    packages agent capabilities. But the
+                                    pipeline that produced them was invisible to
+                                    anyone outside the platform team. Platform
+                                    builders authored skills in IDEs, published
+                                    them through a Jenkins step into a registry,
+                                    and versioned them through DevPortal
+                                    projects. Product teams downstream —
+                                    TurboTax, QuickBooks, the orgs actually
+                                    building customer-facing agents — had no way
+                                    to see what existed, what their agent had
+                                    access to, or how to wire it up themselves.
+                                </p>
+                                <p>
+                                    The result was a queue. Every product team
+                                    filed a ticket with the platform team to get
+                                    skills added, removed, or upgraded. Skills
+                                    got chosen out of band, in Slack threads, by
+                                    whoever happened to know what was available.
+                                    The platform team became a manual approval
+                                    surface for work the platform could
+                                    automate.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="col-label">The Approach</p>
+                                <h3>Three surfaces. One mental model.</h3>
+                                <p>
+                                    I designed Skills as three connected
+                                    surfaces in AI Workbench, each doing one job
+                                    for the user —
+                                    <strong>Discover</strong> a skill exists,
+                                    <strong>Bundle</strong> it for an
+                                    environment, <strong>Consume</strong> it
+                                    from an agent. The same skill flows through
+                                    all three without the user ever touching the
+                                    underlying registry, Jenkins pipeline, or
+                                    bucket policies.
+                                </p>
+                                <p>
+                                    The big constraint was governance. I
+                                    couldn't invent a new permissions model —
+                                    DevPortal already runs project access at
+                                    Intuit, and reinventing it would create two
+                                    sources of truth. So bundles inherit
+                                    DevPortal project permissions silently. The
+                                    trust boundary the org already runs on is
+                                    the trust boundary the bundle inherits. No
+                                    new admin surface, no extra access review.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="margin: 3rem 0 1rem">
+                            <p class="col-label">Act 1 — Discover</p>
+                        </div>
+
+                        <div class="img-ph" data-label="cs05-discovery.png">
+                            <img
+                                src="images/cs05-discovery.png"
+                                alt="Skills Discovery catalog page in AI Workbench with filter chips and skill cards"
+                            />
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <h3>A catalog, not a registry.</h3>
+                                <p>
+                                    The discovery page is where a builder asks
+                                    the first question:
+                                    <em>does what I need already exist?</em> The
+                                    skill cards lead with the human-readable
+                                    name and version, follow with a
+                                    citymap-style namespace path (<code
+                                        style="
+                                            font-family: var(--mono);
+                                            font-size: 0.85em;
+                                            background: var(--bg2);
+                                            padding: 0.15em 0.5em;
+                                            border: 1px solid var(--border);
+                                        "
+                                        >business-finance/accounting/accounting-engine</code
+                                    >), then a one-paragraph description of what
+                                    the skill actually does. The filters — type,
+                                    BU, status — match the way platform stewards
+                                    think about skills, not the way the database
+                                    stores them. Archived skills stay visible
+                                    with a clear pill so nobody accidentally
+                                    builds against something on its way out.
+                                </p>
+                                <p>
+                                    The sidebar is doing real work too. It's
+                                    where I put the documentation links and the
+                                    Slack channel for support — because the
+                                    moment someone discovers a skill is also the
+                                    moment they have the most specific question,
+                                    and the answer shouldn't live three tabs
+                                    away.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="margin: 3rem 0 1rem">
+                            <p class="col-label">Act 2 — Bundle</p>
+                        </div>
+
+                        <div class="img-ph" data-label="cs05-bundle-tab.png">
+                            <img
+                                src="images/cs05-bundle-tab.png"
+                                alt="Skill bundles tab on a project page showing E2E and Prod environments with Promote to prod and Archive actions"
+                            />
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <h3>
+                                    Bundles live on the project. So does
+                                    promotion.
+                                </h3>
+                                <p>
+                                    A bundle is a versioned collection of skills
+                                    attached to a DevPortal project — the same
+                                    project that runs the agent that will
+                                    consume it. So the bundle management surface
+                                    lives on the project page, not on the
+                                    platform-level Skills page. That single
+                                    placement decision absorbs a lot of
+                                    access-control complexity for free: if you
+                                    can edit the project, you can edit its
+                                    bundles.
+                                </p>
+                                <p>
+                                    The environment tabs —
+                                    <strong>E2E</strong> and
+                                    <strong>Prod</strong> — make the promotion
+                                    model visible in the place builders already
+                                    think about environments.
+                                    <strong>Promote to prod</strong> is a
+                                    per-row action, not a separate flow.
+                                    Archiving a bundle is right next to it. The
+                                    destructive action gets a red outline; the
+                                    production-affecting action gets a primary
+                                    one. Nothing about the system is hidden, but
+                                    nothing requires a wiki to operate either.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="margin: 3rem 0 1rem">
+                            <p class="col-label">Act 3 — Consume</p>
+                        </div>
+
+                        <div class="img-ph" data-label="cs05-agents.png">
+                            <img
+                                src="images/cs05-agents.png"
+                                alt="Agents page showing agents owned by the user and external agents, with environment tags and Test agent action"
+                            />
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <h3>The agent is the last mile.</h3>
+                                <p>
+                                    Once a bundle exists, the agent has to pick
+                                    it up. The Agents page is where that
+                                    happens: each agent in the project, the
+                                    framework it runs on (langgraph in this
+                                    view), and the environments it's deployed to
+                                    as colored chips (QAL, E2E, PRD). The same
+                                    vocabulary as the bundle page, in the same
+                                    order, so the mental model carries over.
+                                </p>
+                                <p>
+                                    The split between
+                                    <strong>Owned by us</strong> and
+                                    <strong>External</strong> matters more than
+                                    it looks. Product teams at Intuit consume
+                                    each other's agents constantly — and
+                                    historically nobody knew which agents were
+                                    owned where, which made debugging anything
+                                    cross-team painful. Surfacing ownership as a
+                                    primary tab made cross-team dependencies
+                                    legible. The
+                                    <strong>Test agent</strong> action sits next
+                                    to every agent so verification is one click
+                                    from the row you're already looking at, not
+                                    a separate page.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The Connective Tissue</p>
+                                <h3>
+                                    Three surfaces, one cross-system
+                                    collaboration.
+                                </h3>
+                                <p>
+                                    The reason all three surfaces feel like one
+                                    product is the alignment underneath them.
+                                    Each skill knows what MCP tools it needs to
+                                    call; each bundle knows what DevPortal
+                                    project it lives under; each agent knows
+                                    what bundle it consumes and what
+                                    environments it ships to. I worked across
+                                    three teams to make that alignment real —
+                                    the skills registry team, the tools/MCP
+                                    registry team (a separate org), and
+                                    DevPortal stewards. The UI only works if
+                                    those three systems agree on the model. The
+                                    harder design work was that agreement, not
+                                    the screens.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="impact">
+                            <div class="impact-item">
+                                <div class="impact-n">Live</div>
+                                <div class="impact-d">
+                                    Shipped in AI Workbench — the production
+                                    surface for skills, bundles, and agents at
+                                    Intuit
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">End-to-end</div>
+                                <div class="impact-d">
+                                    Sole designer across discovery, bundle
+                                    governance, and agent management
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">3 systems</div>
+                                <div class="impact-d">
+                                    Aligned across skills registry, tools/MCP
+                                    registry, and DevPortal — one unified
+                                    surface
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reflection">
+                            <p class="reflection-label">Reflection</p>
+                            <p>
+                                Platform work has a strong pull toward designing
+                                what the platform produces — the registry, the
+                                pipeline, the version graph. But the people
+                                using the surface don't care about any of that.
+                                They want to know what exists, whether their
+                                agent can use it, and how to ship it. The
+                                cleanest thing I did on this project wasn't on
+                                any single screen — it was deciding that bundles
+                                belong on the project page, not on the Skills
+                                page. That single placement decision absorbed
+                                most of the access-control complexity for free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox">
+            <button
+                type="button"
+                class="lightbox-close"
+                aria-label="Close lightbox"
+            >
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <img id="lightbox-img" src="" alt="" />
+        </div>
+
+        <script>
+            const lightbox = document.getElementById("lightbox");
+            const lbImg = document.getElementById("lightbox-img");
+
+            document.querySelectorAll(".img-ph img").forEach((img) => {
+                const ph = img.closest(".img-ph");
+                const markLoaded = () =>
+                    img.src && img.naturalWidth && ph.classList.add("has-image");
+                const markMissing = () => ph.classList.add("missing");
+                if (img.complete) {
+                    if (img.naturalWidth) markLoaded();
+                    else markMissing();
+                } else {
+                    img.addEventListener("load", markLoaded);
+                    img.addEventListener("error", markMissing);
+                }
+
+                img.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    // don't open the lightbox for a missing image
+                    if (!img.naturalWidth) return;
+                    lbImg.src = img.src;
+                    lbImg.alt = img.alt;
+                    lbImg.style.width = "";
+                    lightbox.classList.remove("zoomed");
+                    lightbox.classList.add("open");
+                    document.body.style.overflow = "hidden";
+                });
+            });
+
+            function closeLightbox() {
+                lightbox.classList.remove("open");
+                unzoom();
+                document.body.style.overflow = "";
+                lbImg.src = "";
+            }
+
+            const ZOOM = 3; // how much bigger than the fitted size
+
+            function zoomTo(clientX, clientY) {
+                // Grow the image to ZOOM× its currently-fitted display width.
+                const fittedW = lbImg.getBoundingClientRect().width;
+                lbImg.style.width = `${fittedW * ZOOM}px`;
+                lightbox.classList.add("zoomed");
+                // Center the scroll on the point the user clicked.
+                requestAnimationFrame(() => {
+                    const rect = lbImg.getBoundingClientRect();
+                    const relX =
+                        (clientX - rect.left) / rect.width || 0.5;
+                    const relY =
+                        (clientY - rect.top) / rect.height || 0.5;
+                    lightbox.scrollLeft =
+                        relX * lbImg.offsetWidth - lightbox.clientWidth / 2;
+                    lightbox.scrollTop =
+                        relY * lbImg.offsetHeight - lightbox.clientHeight / 2;
+                });
+            }
+
+            function unzoom() {
+                lightbox.classList.remove("zoomed");
+                lbImg.style.width = "";
+            }
+
+            // ── Click to zoom / drag to pan ──
+            let dragging = false;
+            let moved = false;
+            let startX = 0;
+            let startY = 0;
+            let scrollX = 0;
+            let scrollY = 0;
+
+            lbImg.addEventListener("mousedown", (e) => {
+                if (!lightbox.classList.contains("zoomed")) return;
+                dragging = true;
+                moved = false;
+                startX = e.clientX;
+                startY = e.clientY;
+                scrollX = lightbox.scrollLeft;
+                scrollY = lightbox.scrollTop;
+                e.preventDefault();
+            });
+            window.addEventListener("mousemove", (e) => {
+                if (!dragging) return;
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                if (Math.abs(dx) > 3 || Math.abs(dy) > 3) moved = true;
+                lightbox.scrollLeft = scrollX - dx;
+                lightbox.scrollTop = scrollY - dy;
+            });
+            window.addEventListener("mouseup", () => {
+                dragging = false;
+            });
+
+            lbImg.addEventListener("click", (e) => {
+                e.stopPropagation();
+                if (moved) return; // it was a pan, not a click
+                if (lightbox.classList.contains("zoomed")) {
+                    unzoom();
+                } else {
+                    zoomTo(e.clientX, e.clientY);
+                }
+            });
+            lightbox.addEventListener("click", closeLightbox);
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") closeLightbox();
+            });
+
+            // ── PROTOTYPE VIDEO (click to play) ──
+            const protoVideo = document.getElementById("protoVideo");
+            const protoFrame = document.getElementById("protoVideoFrame");
+            const protoPlay = document.getElementById("protoVideoPlay");
+            if (protoVideo && protoFrame && protoPlay) {
+                protoPlay.addEventListener("click", () => {
+                    protoFrame.classList.add("playing");
+                    protoVideo.play();
+                });
+                protoVideo.addEventListener("play", () =>
+                    protoFrame.classList.add("playing"),
+                );
+                protoVideo.addEventListener("pause", () => {
+                    if (protoVideo.currentTime === 0) {
+                        protoFrame.classList.remove("playing");
+                    }
+                });
+                protoVideo.addEventListener("ended", () =>
+                    protoFrame.classList.remove("playing"),
+                );
+            }
+
+            // ── SPA CARD/CASE-STUDY SWAP ──
+            // Assign IDs to .cs divs based on document order
+            const csEls = Array.from(
+                document.querySelectorAll(".work-content .cs"),
+            );
+            csEls.forEach((el, i) => {
+                el.id = `cs-0${i + 1}`;
+            });
+
+            // Build a footer nav (← all work · next case study →) into each .cs
+            const total = csEls.length;
+            csEls.forEach((el, i) => {
+                const prev = csEls[(i - 1 + total) % total]; // wrap to last
+                const next = csEls[(i + 1) % total]; // wrap to first
+                const prevTitle =
+                    prev.querySelector("h2")?.textContent.trim() || "Previous";
+                const nextTitle =
+                    next.querySelector("h2")?.textContent.trim() || "Next";
+                const prevNum = ((i - 1 + total) % total) + 1;
+                const nextNum = ((i + 1) % total) + 1;
+                const nav = document.createElement("div");
+                nav.className = "cs-footer-nav";
+                nav.setAttribute("role", "navigation");
+                nav.setAttribute("aria-label", "Case study navigation");
+                nav.innerHTML = `
+                    <button type="button" class="cs-nav-btn prev" data-nav-cs="${prev.id}">
+                        <span class="cs-nav-arrow" aria-hidden="true">←</span>
+                        <span class="cs-nav-text">
+                            <span class="cs-nav-label">Prev · 0${prevNum}</span>
+                            <span class="cs-nav-title">${prevTitle}</span>
+                        </span>
+                    </button>
+                    <button type="button" class="cs-nav-btn next" data-nav-cs="${next.id}">
+                        <span class="cs-nav-text">
+                            <span class="cs-nav-label">Next · 0${nextNum}</span>
+                            <span class="cs-nav-title">${nextTitle}</span>
+                        </span>
+                        <span class="cs-nav-arrow" aria-hidden="true">→</span>
+                    </button>`;
+                el.appendChild(nav);
+            });
+
+            // Mark cards whose thumbnail loaded so the "label" hides
+            document.querySelectorAll(".card-thumb img").forEach((img) => {
+                const mark = () =>
+                    img.src &&
+                    img.naturalWidth &&
+                    img.closest(".card-thumb").classList.add("has-image");
+                if (img.complete) mark();
+                else img.addEventListener("load", mark);
+            });
+
+            function clearViewClasses() {
+                document.body.classList.remove("cs-view", "about-view");
+                document
+                    .querySelectorAll(".work-content .cs")
+                    .forEach((el) => el.classList.remove("active"));
+            }
+
+            function showHome(updateHash = true) {
+                clearViewClasses();
+                if (updateHash && window.location.hash) {
+                    history.replaceState(
+                        null,
+                        "",
+                        window.location.pathname + window.location.search,
+                    );
+                }
+                window.scrollTo({ top: 0, behavior: "instant" });
+            }
+
+            function showCs(id, updateHash = true) {
+                const target = document.getElementById(id);
+                if (!target || !target.classList.contains("cs")) return;
+                clearViewClasses();
+                target.classList.add("active");
+                document.body.classList.add("cs-view");
+                if (updateHash && window.location.hash !== `#${id}`) {
+                    history.pushState(null, "", `#${id}`);
+                }
+                window.scrollTo({ top: 0, behavior: "instant" });
+            }
+
+            function showAbout(updateHash = true) {
+                clearViewClasses();
+                document.body.classList.add("about-view");
+                if (updateHash && window.location.hash !== "#about") {
+                    history.pushState(null, "", "#about");
+                }
+                window.scrollTo({ top: 0, behavior: "instant" });
+            }
+
+            document.querySelectorAll(".card-cell").forEach((card) => {
+                card.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const csId = card.dataset.cs;
+                    if (csId) showCs(csId);
+                });
+            });
+
+            document
+                .getElementById("backFab")
+                ?.addEventListener("click", () => showHome());
+
+            // Case-study footer nav (delegated)
+            document.querySelectorAll(".cs-footer-nav").forEach((nav) => {
+                nav.addEventListener("click", (e) => {
+                    const btn = e.target.closest("[data-nav-cs]");
+                    if (btn) showCs(btn.dataset.navCs);
+                });
+            });
+
+            // Overexplain toggle (inline asides)
+            const oeToggle = document.getElementById("overexplainToggle");
+            if (oeToggle) {
+                oeToggle.addEventListener("click", () => {
+                    const pressed =
+                        oeToggle.getAttribute("aria-pressed") === "true";
+                    const next = !pressed;
+                    oeToggle.setAttribute("aria-pressed", String(next));
+                    document.body.classList.toggle("overexplain", next);
+                    oeToggle.querySelector(".oe-label").textContent = next
+                        ? "less"
+                        : "overexplain";
+                });
+            }
+
+            window.addEventListener("popstate", () => {
+                const hash = window.location.hash;
+                if (hash && hash.startsWith("#cs-")) {
+                    showCs(hash.slice(1), false);
+                } else if (hash === "#about") {
+                    showAbout(false);
+                } else {
+                    showHome(false);
+                }
+            });
+
+            // Initial load: open a view if hash is set
+            (function () {
+                const hash = window.location.hash;
+                if (hash && hash.startsWith("#cs-")) {
+                    showCs(hash.slice(1), false);
+                } else if (hash === "#about") {
+                    showAbout(false);
+                }
+            })();
+
+            // Header nav behavior
+            document.querySelectorAll("a[data-nav]").forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = link.dataset.nav;
+                    if (target === "work") {
+                        showHome();
+                    } else if (target === "about") {
+                        showAbout();
+                    }
+                });
+            });
+
+            // ── SCROLL NAV ──
+            const scrollNavSections = [
+                { id: "work", label: "Work" },
+                { id: "cs-01", label: "01 — Agent Dev Platform" },
+                { id: "cs-02", label: "02 — Prompt Playground" },
+                { id: "cs-03", label: "03 — Design System" },
+                { id: "cs-04", label: "04 — Designers as Builders" },
+                { id: "cs-05", label: "05 — Skills Discovery" },
+                { id: "about", label: "About" },
+            ];
+
+            // Add IDs to the case study divs
+            document.querySelectorAll(".cs").forEach((el, i) => {
+                el.id = `cs-0${i + 1}`;
+            });
+
+            const scrollNav = document.getElementById("scrollNav");
+            scrollNavSections.forEach(({ id, label }) => {
+                const a = document.createElement("a");
+                a.className = "scroll-nav-item";
+                a.href = `#${id}`;
+                a.dataset.target = id;
+                a.innerHTML = `
+      <span class="scroll-nav-label">${label}</span>
+      <span class="scroll-nav-dot"><span class="scroll-nav-dot-fill"></span></span>`;
+                a.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    document
+                        .getElementById(id)
+                        ?.scrollIntoView({ behavior: "smooth" });
+                });
+                scrollNav.appendChild(a);
+            });
+
+            function updateScrollNav() {
+                const items = scrollNav.querySelectorAll(".scroll-nav-item");
+                const winH = window.innerHeight;
+                const scrollY = window.scrollY;
+
+                scrollNavSections.forEach((sec, i) => {
+                    const el = document.getElementById(sec.id);
+                    if (!el) return;
+                    const item = items[i];
+                    const fill = item.querySelector(".scroll-nav-dot-fill");
+                    const top = el.getBoundingClientRect().top + scrollY;
+                    const bottom = top + el.offsetHeight;
+                    const progress = Math.max(
+                        0,
+                        Math.min(
+                            1,
+                            (scrollY + winH * 0.5 - top) / el.offsetHeight,
+                        ),
+                    );
+
+                    item.classList.toggle(
+                        "active",
+                        scrollY + winH * 0.5 >= top &&
+                            scrollY + winH * 0.5 < bottom,
+                    );
+                    fill.style.height = `${progress * 100}%`;
+                });
+            }
+
+            window.addEventListener("scroll", updateScrollNav, {
+                passive: true,
+            });
+            updateScrollNav();
+        </script>
+    </body>
+</html>

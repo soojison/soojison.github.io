@@ -1,0 +1,18 @@
+# Internal / non-public — never publish
+references/
+*.mov
+*.pdf
+*.docx
+*.rtf
+
+# Personal notes
+README.txt
+
+# OS junk
+.DS_Store
+**/.DS_Store
+
+# Editor / agent config (not part of the site)
+AGENTS.md
+CLAUDE.md
+.cursorrules
