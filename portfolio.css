@@ -897,13 +897,21 @@ hr {
 }
 
 @media (max-width: 720px) {
+    .cs-footer-nav {
+        gap: 0.6rem;
+    }
     .cs-nav-btn {
-        max-width: 62%;
-        padding: 1rem;
-        gap: 0.65rem;
+        flex: 1 1 0;
+        max-width: none;
+        min-width: 0;
+        padding: 0.85rem 0.9rem;
+        gap: 0.5rem;
     }
     .cs-nav-title {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+    }
+    .cs-nav-label {
+        font-size: 0.62rem;
     }
 }
 
@@ -1002,16 +1010,32 @@ hr {
 
 @media (max-width: 720px) {
     nav {
-        padding: 1.25rem 1.5rem;
+        padding: 1.25rem 1.25rem;
+    }
+    .nav-name {
+        font-size: 1.25rem;
     }
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 1.25rem;
+    }
+    .nav-links a {
+        font-size: 0.66rem;
+        letter-spacing: 0.1em;
     }
     .hero {
         padding: 10rem 1.5rem 6rem;
     }
     .section {
         padding: 5rem 1.5rem;
+    }
+    /* On mobile the browser/system back gesture handles going back,
+       so the floating back button is redundant — hide it.
+       !important overrides the later unwrapped `body.cs-view .back-fab`
+       rule (higher specificity + later source order). */
+    .back-fab,
+    body.cs-view .back-fab {
+        display: none !important;
     }
     .about-layout {
         grid-template-columns: 1fr;
@@ -1022,6 +1046,7 @@ hr {
     }
     .cs-tags {
         align-items: flex-start;
+        min-width: 0;
     }
     .cs-cols {
         grid-template-columns: 1fr;
