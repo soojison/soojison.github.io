@@ -135,13 +135,13 @@
                             <div class="card-cell-foot">
                                 <div class="hero-pills">
                                     <span class="pill accent">
-                                        Coded Prototype
+                                        User Research
                                     </span>
                                     <span class="pill accent">
                                         Technical Whole Workflow Design
                                     </span>
                                     <span class="pill accent">
-                                        User Research
+                                        Coded Prototype
                                     </span>
                                 </div>
                             </div>
@@ -165,10 +165,10 @@
                             <div class="card-cell-foot">
                                 <div class="hero-pills">
                                     <span class="pill accent">
-                                        Product Strategy
+                                        User Research
                                     </span>
                                     <span class="pill accent">
-                                        Phased Rollout
+                                        Product Strategy
                                     </span>
                                     <span class="pill accent">
                                         Coded Prototype
@@ -201,10 +201,10 @@
                                         Design Systems
                                     </span>
                                     <span class="pill accent">
-                                        Component Library
+                                        Analyzing Cross-product Needs
                                     </span>
                                     <span class="pill accent">
-                                        Figma + React + Storybook
+                                        Figma + Storybook
                                     </span>
                                 </div>
                             </div>
@@ -1945,11 +1945,15 @@
                                     than handing specs to engineers to
                                     interpret. That meant design decisions were
                                     grounded in what was technically sound, not
-                                    just what looked right in Figma. I also set
-                                    up the governance process: a regular working
-                                    cadence with frontend developers across
-                                    platform teams to review requests,
-                                    prioritize, and keep the system maintained.
+                                    just what looked right in Figma. I also run
+                                    the governance for the system: monthly ops
+                                    meetings with developers across the platform
+                                    teams to hear what they need and prioritize
+                                    it, plus an open channel where anyone can
+                                    file bugs or raise issues — which I triage
+                                    and pick up. The system stays maintained
+                                    because there's a standing way in, not
+                                    because people happen to find me.
                                 </p>
                             </div>
                         </div>
@@ -2015,6 +2019,207 @@
 
                         <div class="cs-cols full">
                             <div>
+                                <p class="col-label">
+                                    Spotlight: The Search Result Row
+                                </p>
+                                <h3>
+                                    Three products, three broken search
+                                    surfaces, one shared component.
+                                </h3>
+                                <p>
+                                    Search looked completely different in every
+                                    product — and every version was broken in
+                                    its own way. One crammed everything in at
+                                    high density with inconsistent spacing.
+                                    Another wasted space, repeated the same
+                                    labels row after row, put related
+                                    information far apart, and had no ownership
+                                    info at all — you couldn't tell which team
+                                    or project a result belonged to. A third was
+                                    so barebones it surfaced almost nothing
+                                    useful while still eating up the whole
+                                    result area. This is the kind of problem I
+                                    love: it's a puzzle. Can everyone actually
+                                    share one component for these differing
+                                    needs?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="img-ph"
+                            data-label="cs03-different-search.png"
+                        >
+                            <img
+                                src="images/cs03-different-search.png"
+                                alt="Three product search surfaces side by side, annotated with their problems: high density and inconsistent spacing; wasted space, repeated info, no ownership; and basic with too little info and unnecessary spacing"
+                            />
+                        </div>
+                        <figcaption class="caption">
+                            The starting point: the same job, solved three
+                            incompatible ways. I annotated what was failing in
+                            each surface before proposing anything.
+                        </figcaption>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The Synthesis</p>
+                                <h3>
+                                    Find what's common — then find what should
+                                    have been common.
+                                </h3>
+                                <p>
+                                    I pulled apart all three surfaces and mapped
+                                    the shared anatomy: a search input,
+                                    category chips or tabs to divide results,
+                                    the results area itself (table, card, or
+                                    list), and inside each result — an icon,
+                                    name, description, tags or badges, and a
+                                    checklist filter. Some of these existed
+                                    everywhere; some didn't exist anywhere but
+                                    clearly should have (ownership was the big
+                                    one). Naming that gap was half the work.
+                                </p>
+                                <p>
+                                    Then I set the principles the component had
+                                    to hold to:
+                                    <strong
+                                        >a max-width bound of 1280px, grouping
+                                        related information closer together,
+                                        and reducing redundant and low-density
+                                        info sprawl</strong
+                                    >. Everything after that was iteration
+                                    against those rules and against real team
+                                    feedback.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="img-grid">
+                            <div class="img-ph" data-label="cs03-searchv1.png">
+                                <img
+                                    src="images/cs03-searchv1.png"
+                                    alt="First iteration of the search result row — minimal layout with name, type, label, and inline actions"
+                                />
+                            </div>
+                            <div class="img-ph" data-label="cs03-searchv2.png">
+                                <img
+                                    src="images/cs03-searchv2.png"
+                                    alt="Second iteration — richer row with icon, tagline, description, tags, owner team, timestamp, and a main action"
+                                />
+                            </div>
+                        </div>
+                        <figcaption class="caption">
+                            v1 → v2: from a stripped-back row to one that
+                            grouped related info and finally surfaced ownership
+                            and freshness.
+                        </figcaption>
+
+                        <div
+                            class="img-ph"
+                            data-label="cs03-searchv3.png"
+                        >
+                            <img
+                                src="images/cs03-searchv3.png"
+                                alt="UnifiedSearchResultRowV3 in Figma with its full property set — badge groups, AI-generated description, owner info, timestamp, four additional info slots, postscript, and actions, each toggleable"
+                            />
+                        </div>
+                        <figcaption class="caption">
+                            v3 — UnifiedSearchResultRowV3: every element is a
+                            toggle, so one component flexes from the sparse case
+                            to the dense one without any team having to fork it.
+                            Wiring up every one of those knobs in Figma so the
+                            component actually flexes is honestly the part I
+                            find most fun — and when those same toggles map 1:1
+                            to the props in the React component, design and
+                            engineering are finally pointing at the same object
+                            instead of translating across a handoff.
+                        </figcaption>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The Guidelines</p>
+                                <h3>
+                                    The component is only half of it — the
+                                    rules for using it are the other half.
+                                </h3>
+                                <p>
+                                    A flexible component with no guardrails just
+                                    recreates the original problem in a new
+                                    place. So alongside it I wrote UX guidelines
+                                    — drawn from what I saw across the products,
+                                    what I believed the patterns should be, and
+                                    the feedback that shaped each iteration — so
+                                    teams know not just what they <em>can</em>
+                                    toggle, but what they <em>should</em>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <figure class="doc-thumb">
+                            <img
+                                src="images/cs03-ux-guides.png"
+                                alt="UX guidelines for the unified search result row, documenting when to use each element and how to keep results scannable"
+                            />
+                        </figure>
+                        <figcaption class="caption">
+                            UX guidelines for the search result row, written up
+                            in the shared component library.
+                        </figcaption>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">From Figma to Shipped</p>
+                                <h3>
+                                    I didn't hand off the spec — I coded it and
+                                    put it in a real product.
+                                </h3>
+                                <p>
+                                    A component only counts once it's in
+                                    someone's product. So I built the search
+                                    result row into the design system as a
+                                    published package — composed from existing
+                                    system pieces (menu, badges, icons) rather
+                                    than reinventing them, styled entirely with
+                                    design tokens and no hardcoded colors, and
+                                    shipped with unit tests, snapshots, and full
+                                    Storybook stories and docs so the next team
+                                    could adopt it without asking me how it
+                                    works.
+                                </p>
+                                <p>
+                                    Building it end to end surfaced things a
+                                    Figma file never would. A design call — the
+                                    right-rail actions read cleaner as a single
+                                    kebab menu than as a split button — was one
+                                    I could just make in the code. And while
+                                    wiring it up I traced a two-year-old
+                                    dependency bug: a stale package version
+                                    hoisted at the monorepo root was silently
+                                    overriding the live one, so local changes to
+                                    a shared component were being ignored across
+                                    the whole system. Fixing it unblocked more
+                                    than my own component.
+                                </p>
+                                <p>
+                                    Then I closed the loop: I opened a pull
+                                    request against one of the products to swap
+                                    its bespoke search interface over to the
+                                    shared component, rolled out behind a feature
+                                    flag as a canary so the team could validate
+                                    it in production safely. The migration
+                                    <strong
+                                        >removed more product code than it
+                                        added</strong
+                                    >
+                                    — which is the whole point of a design
+                                    system, made concrete.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
                                 <p class="col-label">Recent Shipping</p>
                                 <h3>
                                     The system is alive, not a one-time launch.
@@ -2072,18 +2277,24 @@
                         <div class="reflection">
                             <p class="reflection-label">Reflection</p>
                             <p>
-                                Building the components is the straightforward
-                                part. Getting teams to actually use them is a
-                                different problem — one that's more about trust
-                                and convenience than quality. Annotating every
-                                spec with the relevant component was one
-                                concrete lever: it meant adoption didn't depend
-                                on developers remembering to check the system.
-                                But that only works at the point of handoff.
-                                What I'd invest more in next time is making the
-                                system's value visible earlier — tracking usage,
-                                surfacing time saved, and giving contributors a
-                                sense of ownership over what they helped build.
+                                The reason I keep coming back to design systems
+                                work: it's a puzzle I actually enjoy — how do
+                                four teams building the same thing end up
+                                sharing one component? — and the payoff is
+                                seeing it get adopted.
+                            </p>
+                            <p>
+                                But building the thing is the easy half. Getting
+                                teams to use it is about trust and convenience
+                                more than quality. Annotating every spec with
+                                the relevant component was one lever: it meant
+                                adoption didn't depend on developers remembering
+                                to check the system. But that only works at the
+                                point of handoff. What I'd invest in next is
+                                making the system's value visible earlier —
+                                tracking usage, surfacing time saved, and giving
+                                contributors a sense of ownership over what they
+                                helped build.
                             </p>
                         </div>
                     </div>
