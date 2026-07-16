@@ -41,29 +41,6 @@
             </ul>
         </nav>
 
-        <button
-            type="button"
-            class="back-fab"
-            id="backFab"
-            aria-label="Back"
-            data-tooltip="Back to home"
-        >
-            <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-            >
-                <line x1="19" y1="12" x2="5" y2="12"></line>
-                <polyline points="12 19 5 12 12 5"></polyline>
-            </svg>
-        </button>
-
         <div class="layout-grid">
             <aside class="layout-left">
                 <div class="hero">
@@ -3104,36 +3081,85 @@ color: #1f2937;                    <span class="c-cm">// wrong</span>
                 el.id = `cs-0${i + 1}`;
             });
 
-            // Build a footer nav (← all work · next case study →) into each .cs
+            // Build in-context nav into each .cs:
+            //  - a top bar: "← Work" breadcrumb + compact titled prev/next
+            //  - a footer nav: richer titled prev/next
+            // Prev/next do NOT wrap: the first case study has no prev, the
+            // last has no next.
             const total = csEls.length;
             csEls.forEach((el, i) => {
-                const prev = csEls[(i - 1 + total) % total]; // wrap to last
-                const next = csEls[(i + 1) % total]; // wrap to first
+                const prev = i > 0 ? csEls[i - 1] : null;
+                const next = i < total - 1 ? csEls[i + 1] : null;
                 const prevTitle =
-                    prev.querySelector("h2")?.textContent.trim() || "Previous";
+                    prev?.querySelector("h2")?.textContent.trim() || "";
                 const nextTitle =
-                    next.querySelector("h2")?.textContent.trim() || "Next";
-                const prevNum = ((i - 1 + total) % total) + 1;
-                const nextNum = ((i + 1) % total) + 1;
+                    next?.querySelector("h2")?.textContent.trim() || "";
+                const prevNum = i; // 1-based number of the previous CS
+                const nextNum = i + 2; // 1-based number of the next CS
+
+                // ── top bar ──
+                const topbar = document.createElement("div");
+                topbar.className = "cs-topbar";
+                topbar.setAttribute("role", "navigation");
+                topbar.setAttribute("aria-label", "Case study navigation");
+                const prevTop = prev
+                    ? `<button type="button" class="cs-top-btn prev" data-nav-cs="${prev.id}">
+          <span class="cs-top-arrow" aria-hidden="true">←</span>
+          <span class="cs-top-num">0${prevNum}</span>
+          <span class="cs-top-title">${prevTitle}</span>
+          </button>`
+                    : "";
+                const nextTop = next
+                    ? `<button type="button" class="cs-top-btn next" data-nav-cs="${next.id}">
+          <span class="cs-top-num">0${nextNum}</span>
+          <span class="cs-top-title">${nextTitle}</span>
+          <span class="cs-top-arrow" aria-hidden="true">→</span>
+          </button>`
+                    : "";
+                topbar.innerHTML = `
+          <button type="button" class="cs-top-home" data-nav="work">
+          <span class="cs-top-arrow" aria-hidden="true">←</span>
+          <span>Work</span>
+          </button>
+          <div class="cs-top-pager">${prevTop}${nextTop}</div>`;
+                el.prepend(topbar);
+
+                // ── footer nav ──
                 const nav = document.createElement("div");
                 nav.className = "cs-footer-nav";
                 nav.setAttribute("role", "navigation");
                 nav.setAttribute("aria-label", "Case study navigation");
-                nav.innerHTML = `
-          <button type="button" class="cs-nav-btn prev" data-nav-cs="${prev.id}">
+                const prevBtn = prev
+                    ? `<button type="button" class="cs-nav-btn prev" data-nav-cs="${prev.id}">
           <span class="cs-nav-arrow" aria-hidden="true">←</span>
           <span class="cs-nav-text">
           <span class="cs-nav-label">Prev · 0${prevNum}</span>
           <span class="cs-nav-title">${prevTitle}</span>
           </span>
-          </button>
-          <button type="button" class="cs-nav-btn next" data-nav-cs="${next.id}">
+          </button>`
+                    : `<button type="button" class="cs-nav-btn home" data-nav="work">
+          <span class="cs-nav-arrow" aria-hidden="true">←</span>
+          <span class="cs-nav-text">
+          <span class="cs-nav-label">Back to</span>
+          <span class="cs-nav-title">All work</span>
+          </span>
+          </button>`;
+                const nextBtn = next
+                    ? `<button type="button" class="cs-nav-btn next" data-nav-cs="${next.id}">
           <span class="cs-nav-text">
           <span class="cs-nav-label">Next · 0${nextNum}</span>
           <span class="cs-nav-title">${nextTitle}</span>
           </span>
           <span class="cs-nav-arrow" aria-hidden="true">→</span>
+          </button>`
+                    : `<button type="button" class="cs-nav-btn next home" data-nav="work">
+          <span class="cs-nav-text">
+          <span class="cs-nav-label">Back to</span>
+          <span class="cs-nav-title">All work</span>
+          </span>
+          <span class="cs-nav-arrow" aria-hidden="true">→</span>
           </button>`;
+                nav.innerHTML = prevBtn + nextBtn;
                 el.appendChild(nav);
             });
 
@@ -3203,17 +3229,21 @@ color: #1f2937;                    <span class="c-cm">// wrong</span>
                 });
             });
 
+            // In-context case-study nav — top bar + footer (delegated).
+            // Handles prev/next (data-nav-cs) and "back to work" (data-nav).
             document
-                .getElementById("backFab")
-                ?.addEventListener("click", () => showHome());
-
-            // Case-study footer nav (delegated)
-            document.querySelectorAll(".cs-footer-nav").forEach((nav) => {
-                nav.addEventListener("click", (e) => {
-                    const btn = e.target.closest("[data-nav-cs]");
-                    if (btn) showCs(btn.dataset.navCs);
+                .querySelectorAll(".cs-topbar, .cs-footer-nav")
+                .forEach((nav) => {
+                    nav.addEventListener("click", (e) => {
+                        const csBtn = e.target.closest("[data-nav-cs]");
+                        if (csBtn) {
+                            showCs(csBtn.dataset.navCs);
+                            return;
+                        }
+                        const homeBtn = e.target.closest('[data-nav="work"]');
+                        if (homeBtn) showHome();
+                    });
                 });
-            });
 
             // Overexplain toggle (inline asides)
             const oeToggle = document.getElementById("overexplainToggle");
