@@ -348,6 +348,15 @@ hr {
     margin: 3rem 0;
     align-items: start;
 }
+/* Small UI chip (e.g. the plugin rating card): keep it at natural size, centered,
+   so it doesn't get blown up to full width and go blurry. */
+.img-ph.rating-card {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: default;
+}
+
 .img-grid .img-ph {
     aspect-ratio: 4/3;
     margin: 0;
