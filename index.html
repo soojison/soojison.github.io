@@ -1897,40 +1897,129 @@
                             />
                         </div>
 
-                        <div class="cs-cols">
+                        <div class="cs-cols full">
                             <div>
                                 <p class="col-label">The Problem</p>
-                                <h3>Four teams building the same things.</h3>
+                                <h3>
+                                    A strong foundation, but not built for dense
+                                    platform workflows.
+                                </h3>
                                 <p>
-                                    Across four distinct products, designers
-                                    were recreating components from scratch.
-                                    Developers were writing new code to
-                                    approximate a system that didn't fully
-                                    exist. As AI-assisted development grew, that
-                                    duplication compounded — teams were
-                                    generating redundant code to produce
-                                    components that should have been
-                                    standardized already.
+                                    Intuit already had a mature, company-wide
+                                    design system (IDS) supporting hundreds of
+                                    designers and thousands of developers across
+                                    flagship products like TurboTax, QuickBooks,
+                                    and Mailchimp.
                                 </p>
+                                <p>
+                                    But our team worked in a more technical
+                                    domain: interfaces that had to handle dense
+                                    data, complex configuration, multiple
+                                    statuses, and layered information beyond
+                                    what standard product patterns were designed
+                                    for.
+                                </p>
+                                <p>
+                                    As a result, four product teams were each
+                                    reinventing the same components — designers
+                                    rebuilding them in Figma, developers
+                                    hand-wiring approximations in code — and
+                                    critiques kept getting stuck on
+                                    component-level decisions instead of the
+                                    user flow.
+                                </p>
+                                <p>
+                                    We didn't need to replace IDS. We needed a
+                                    specialized layer that extended it for the
+                                    realities of our platform — and every
+                                    extension came from a real workflow need,
+                                    not a bigger library for its own sake:
+                                </p>
+                                <ul class="role-bullets">
+                                    <li>
+                                        Higher-priority and inline-icon badge
+                                        states, so status could be scanned at a
+                                        glance in data-heavy views.
+                                    </li>
+                                    <li>
+                                        A menu that supported search, grouping,
+                                        and nested actions, because our
+                                        workflows had more to configure than a
+                                        simple dropdown could hold.
+                                    </li>
+                                    <li>
+                                        Density, multi-status, and configuration
+                                        patterns that reflected how our platform
+                                        actually worked — not decorative
+                                        variants.
+                                    </li>
+                                </ul>
                             </div>
+                        </div>
+
+                        <div class="img-ph" data-label="cs03-ids-vs-a2d.png">
+                            <img
+                                src="images/cs03-ids-vs-a2d.png"
+                                alt="Base IDS Badge component compared to our extended platform layer"
+                            />
+                        </div>
+                        <figcaption class="caption">
+                            Added high-priority visual treatments and inline
+                            icon support, with usage guidance for priority,
+                            icon, and shape.
+                        </figcaption>
+
+                        <div class="img-ph" data-label="cs03-ids-vs-a2d-2.png">
+                            <img
+                                src="images/cs03-ids-vs-a2d-2.png"
+                                alt="Base IDS Menu component compared to our extended platform layer"
+                            />
+                        </div>
+                        <figcaption class="caption">
+                            Supported search, grouping, nested actions,
+                            selection states, and multiple ways to organize
+                            dense actions.
+                        </figcaption>
+
+                        <div class="cs-cols full">
                             <div>
-                                <p class="col-label">My Role</p>
-                                <h3>Designer and component author.</h3>
+                                <p class="col-label">
+                                    My Role: Turning Patterns Into
+                                    Infrastructure
+                                </p>
+                                <h3>Standardizing fractured experiences</h3>
+                                <p>
+                                    I started by turning repeated patterns into
+                                    reusable Figma components, documenting when
+                                    to use them, and bringing those standards
+                                    into design critiques. Over time, critiques
+                                    became less about reinventing patterns and
+                                    more about aligning on shared decisions:
+                                    which component to use, what states it
+                                    needed, and whether a new pattern belonged
+                                    in the system.
+                                </p>
                                 <p>
                                     Because I came from a development
-                                    background, I wrote the code myself rather
-                                    than handing specs to engineers to
-                                    interpret. That meant design decisions were
-                                    grounded in what was technically sound, not
-                                    just what looked right in Figma. I also run
-                                    the governance for the system: monthly ops
-                                    meetings with developers across the platform
-                                    teams to hear what they need and prioritize
-                                    it, plus an open channel where anyone can
-                                    file bugs or raise issues — which I triage
-                                    and pick up. The system stays maintained
-                                    because there's a standing way in, not
-                                    because people happen to find me.
+                                    background, I also contributed directly to
+                                    the coded library. Engineering support was
+                                    limited and volunteer-based, so I used my
+                                    front-end skills and AI-assisted workflows
+                                    to move components from Figma specs into
+                                    working React components faster — while
+                                    preserving the details teams depended on,
+                                    including density, status states,
+                                    configuration, and edge cases.
+                                </p>
+                                <p>
+                                    I also helped create the operating model
+                                    around the system: monthly meetings with
+                                    developers across platform teams, an open
+                                    channel for bugs and requests, and a triage
+                                    process for prioritizing what to build next.
+                                    The system became maintainable because there
+                                    was a clear way to request, discuss, build,
+                                    and improve components.
                                 </p>
                             </div>
                         </div>
@@ -1959,48 +2048,10 @@
                         <div class="cs-cols full">
                             <div>
                                 <p class="col-label">
-                                    Spotlight: The Menu Component
-                                </p>
-                                <h3>
-                                    One component that handles the majority of
-                                    use cases.
-                                </h3>
-                                <p>
-                                    Intuit's design system already had a menu
-                                    component — but it was a simple dropdown: a
-                                    list of items, and at best a checkmark next
-                                    to one. No radio buttons, no icons, no
-                                    submenus, no search, no section grouping.
-                                    For the kind of complex data operations our
-                                    products needed, every team was patching
-                                    around it independently and producing
-                                    inconsistent results.
-                                </p>
-                                <p>
-                                    Rather than keep patching, I designed and
-                                    coded a shared version that covered the real
-                                    use cases: checkboxes, icons, submenus,
-                                    integrated search, section headers, and full
-                                    open/close interaction behaviors. One
-                                    component, used across all four products.
-                                </p>
-                                <p>
-                                    To get teams to use it, I made it the
-                                    obvious choice. Every spec I produce is
-                                    annotated with the relevant component so a
-                                    developer opening it doesn't have to ask —
-                                    it's already called out.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="cs-cols full">
-                            <div>
-                                <p class="col-label">
                                     Spotlight: The Search Result Row
                                 </p>
                                 <h3>
-                                    Three products, three broken search
+                                    Three products, three inconsistent search
                                     surfaces, one shared component.
                                 </h3>
                                 <p>
@@ -2015,10 +2066,10 @@
                                     or project a result belonged to. A third was
                                     so barebones it surfaced almost nothing
                                     useful while still eating up the whole
-                                    result area. This is the kind of problem I
-                                    love: it's a puzzle. Can everyone actually
-                                    share one component for these differing
-                                    needs?
+                                    result area. The challenge was determining
+                                    whether three seemingly different surfaces
+                                    were actually variations of the same
+                                    underlying pattern.
                                 </p>
                             </div>
                         </div>
@@ -2047,24 +2098,24 @@
                                 </h3>
                                 <p>
                                     I pulled apart all three surfaces and mapped
-                                    the shared anatomy: a search input,
-                                    category chips or tabs to divide results,
-                                    the results area itself (table, card, or
-                                    list), and inside each result — an icon,
-                                    name, description, tags or badges, and a
-                                    checklist filter. Some of these existed
-                                    everywhere; some didn't exist anywhere but
-                                    clearly should have (ownership was the big
-                                    one). Naming that gap was half the work.
+                                    the shared anatomy: a search input, category
+                                    chips or tabs to divide results, the results
+                                    area itself (table, card, or list), and
+                                    inside each result — an icon, name,
+                                    description, tags or badges, and a checklist
+                                    filter. Some of these existed everywhere;
+                                    some didn't exist anywhere but clearly
+                                    should have (ownership was the big one).
+                                    Naming that gap was half the work.
                                 </p>
                                 <p>
                                     Then I set the principles the component had
                                     to hold to:
                                     <strong
                                         >a max-width bound of 1280px, grouping
-                                        related information closer together,
-                                        and reducing redundant and low-density
-                                        info sprawl</strong
+                                        related information closer together, and
+                                        reducing redundant and low-density info
+                                        sprawl</strong
                                     >. Everything after that was iteration
                                     against those rules and against real team
                                     feedback.
@@ -2092,43 +2143,39 @@
                             and freshness.
                         </figcaption>
 
-                        <div
-                            class="img-ph"
-                            data-label="cs03-searchv3.png"
-                        >
+                        <div class="img-ph" data-label="cs03-searchv3.png">
                             <img
                                 src="images/cs03-searchv3.png"
                                 alt="UnifiedSearchResultRowV3 in Figma with its full property set — badge groups, AI-generated description, owner info, timestamp, four additional info slots, postscript, and actions, each toggleable"
                             />
                         </div>
                         <figcaption class="caption">
-                            v3 — UnifiedSearchResultRowV3: every element is a
-                            toggle, so one component flexes from the sparse case
-                            to the dense one without any team having to fork it.
-                            Wiring up every one of those knobs in Figma so the
-                            component actually flexes is honestly the part I
-                            find most fun — and when those same toggles map 1:1
-                            to the props in the React component, design and
-                            engineering are finally pointing at the same object
-                            instead of translating across a handoff.
+                            v3 — UnifiedSearchResultRowV3: every major element
+                            is toggleable, so the component can flex from sparse
+                            to dense use cases without requiring teams to fork
+                            it. The Figma properties map directly to React
+                            props, which means designers and developers are
+                            finally working from the same model instead of
+                            translating across a handoff.
                         </figcaption>
 
                         <div class="cs-cols full">
                             <div>
                                 <p class="col-label">The Guidelines</p>
                                 <h3>
-                                    The component is only half of it — the
-                                    rules for using it are the other half.
+                                    The component is only half of it — the rules
+                                    for using it are the other half.
                                 </h3>
                                 <p>
                                     A flexible component with no guardrails just
                                     recreates the original problem in a new
-                                    place. So alongside it I wrote UX guidelines
-                                    — drawn from what I saw across the products,
-                                    what I believed the patterns should be, and
-                                    the feedback that shaped each iteration — so
-                                    teams know not just what they <em>can</em>
-                                    toggle, but what they <em>should</em>.
+                                    place. So alongside the component, I wrote
+                                    UX guidelines based on product audits,
+                                    cross-team feedback, and the devisions that
+                                    shaped each iteration. The goal was to help
+                                    teams understand not just what they
+                                    <em>could</em> toggle, but what they
+                                    <em>should</em> use and why.
                                 </p>
                             </div>
                         </div>
@@ -2152,18 +2199,29 @@
                                     put it in a real product.
                                 </h3>
                                 <p>
-                                    A component only counts once it's in
-                                    someone's product. So I built the search
+                                    A component only counts once it is in
+                                    someone’s product. So I built the search
                                     result row into the design system as a
-                                    published package — composed from existing
-                                    system pieces (menu, badges, icons) rather
-                                    than reinventing them, styled entirely with
-                                    design tokens and no hardcoded colors, and
-                                    shipped with unit tests, snapshots, and full
-                                    Storybook stories and docs so the next team
-                                    could adopt it without asking me how it
-                                    works.
+                                    published package, composed from existing
+                                    system pieces like menus, badges, and icons
+                                    rather than reinventing them.
                                 </p>
+                                <p>
+                                    It was styled entirely with design tokens,
+                                    with no hardcoded colors, and shipped with
+                                    unit tests, snapshots, Storybook stories,
+                                    and documentation so the next team could
+                                    adopt it without asking me how it worked.
+                                </p>
+                                <figure class="doc-thumb">
+                                    <img
+                                        src="images/cs03-coded-srr.png"
+                                        alt="Search Result Row in Storybook"
+                                    />
+                                </figure>
+                                <figcaption class="caption">
+                                    Search Result Row component in Storybook
+                                </figcaption>
                                 <p>
                                     Building it end to end surfaced things a
                                     Figma file never would. A design call — the
@@ -2182,9 +2240,10 @@
                                     Then I closed the loop: I opened a pull
                                     request against one of the products to swap
                                     its bespoke search interface over to the
-                                    shared component, rolled out behind a feature
-                                    flag as a canary so the team could validate
-                                    it in production safely. The migration
+                                    shared component, rolled out behind a
+                                    feature flag as a canary so the team could
+                                    validate it in production safely. The
+                                    migration
                                     <strong
                                         >removed more product code than it
                                         added</strong
@@ -2237,16 +2296,16 @@
                             <div class="impact-item">
                                 <div class="impact-n">6+ new</div>
                                 <div class="impact-d">
-                                    Components shipped this year: Menu v2, Card,
-                                    Popover, Breadcrumb, PageHeader,
-                                    SearchResultRow
+                                    Shared components shipped across the
+                                    platform, reducing one-off product
+                                    implementations.
                                 </div>
                             </div>
                             <div class="impact-item">
                                 <div class="impact-n">4</div>
                                 <div class="impact-d">
-                                    Products using the system, reducing
-                                    duplicated development work
+                                    Product surfaces aligned around shared Figma
+                                    and React components.
                                 </div>
                             </div>
                         </div>
@@ -2255,23 +2314,28 @@
                             <p class="reflection-label">Reflection</p>
                             <p>
                                 The reason I keep coming back to design systems
-                                work: it's a puzzle I actually enjoy — how do
-                                four teams building the same thing end up
-                                sharing one component? — and the payoff is
-                                seeing it get adopted.
+                                work is that it sits at the intersection of
+                                product judgment, technical constraints, and
+                                adoption. The puzzle is not just “Can we design
+                                one component?” It is “Can four teams with
+                                different needs trust the same component enough
+                                to stop rebuilding their own?”
                             </p>
                             <p>
                                 But building the thing is the easy half. Getting
                                 teams to use it is about trust and convenience
-                                more than quality. Annotating every spec with
-                                the relevant component was one lever: it meant
-                                adoption didn't depend on developers remembering
-                                to check the system. But that only works at the
-                                point of handoff. What I'd invest in next is
-                                making the system's value visible earlier —
-                                tracking usage, surfacing time saved, and giving
-                                contributors a sense of ownership over what they
-                                helped build.
+                                as much as quality. Annotating every spec with
+                                the relevant component was one lever: adoption
+                                did not depend on developers remembering to
+                                check the system because the component was
+                                already called out at handoff.
+                            </p>
+                            <p>
+                                What I would invest in next is making the
+                                system’s value visible earlier — tracking usage,
+                                surfacing time saved, and giving contributors a
+                                clearer sense of ownership over what they helped
+                                build.
                             </p>
                         </div>
                     </div>
