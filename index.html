@@ -198,19 +198,19 @@
                                     04: Designers as builders
                                 </div>
                                 <div class="card-sub">
-                                    Enabling the design team to ship code
+                                    Making AI-assisted building usable for non-developers
                                 </div>
                             </div>
                             <div class="card-cell-foot">
                                 <div class="hero-pills">
                                     <span class="pill accent">
-                                        Shipped React PRs
-                                    </span>
-                                    <span class="pill accent">
-                                        Process Change
-                                    </span>
-                                    <span class="pill accent">
                                         Team Enablement
+                                    </span>
+                                    <span class="pill accent">
+                                        100% Adoption
+                                    </span>
+                                    <span class="pill accent">
+                                        Shipped React PRs
                                     </span>
                                 </div>
                             </div>
@@ -2344,26 +2344,28 @@
                         <div class="cs-top">
                             <div>
                                 <p class="cs-num">04 — Designers as Builders</p>
-                                <h2>Designers shipping code</h2>
+                                <h2>
+                                    Making AI-assisted building usable for non-developers
+                                </h2>
                                 <p class="cs-sub">
-                                    If we can fix it ourselves, we should — and
-                                    we should make the next person's fix easier
-                                    too
+                                    I turned AI-assisted prototyping from an
+                                    individual technical skill into a repeatable
+                                    team capability.
                                 </p>
                             </div>
                             <div class="cs-tags">
                                 <span class="cs-tag"
-                                    >Designer + Contributor</span
+                                    >Enablement · setup · 1:1 coaching</span
                                 >
                                 <span class="cs-tag"
-                                    >React PRs across two product repos</span
+                                    >Design System bootstrap repo · AGENTS.md</span
                                 >
                                 <span class="cs-tag"
-                                    >AGENTS.md ruleset · IDS bootstrap
-                                    template</span
+                                    >Designers, PMs, content, ops,
+                                    managers</span
                                 >
                                 <span class="cs-tag"
-                                    >Designer enablement guide</span
+                                    >100% design-team adoption</span
                                 >
                             </div>
                         </div>
@@ -2378,73 +2380,276 @@
                         <div class="cs-cols">
                             <div>
                                 <p class="col-label">The Problem</p>
-                                <h3>The handoff loop was the bottleneck.</h3>
+                                <h3>
+                                    AI prototyping was powerful — but only if
+                                    you already knew how to be a developer.
+                                </h3>
                                 <p>
-                                    Two patterns kept showing up across the
-                                    Platform org. First, developers using AI
-                                    were producing code that only visually
-                                    approximated the design system but didn't
-                                    actually use it. Even within the same repo,
-                                    there were multiple custom-written instances
-                                    of the same component, and duplicated styles
-                                    and hardcoded colors were making reuse
-                                    difficult. Second, designers wanting to use
-                                    the new AI tools to prototype or contribute
-                                    were blocked due to the lack of knowledge.
-                                    The existing paved-path were the developers'
-                                    domain, allowing only for developing
-                                    production ready code with heavy baggage,
-                                    not quick prototypes that designers wanted.
+                                    Across the Platform org, more people were
+                                    experimenting with tools like Builder,
+                                    Cursor, and Claude Code. But the people who
+                                    could benefit most from faster prototyping —
+                                    designers, PMs, content designers, ops
+                                    partners, and managers — were blocked by
+                                    setup, repo conventions, design-system
+                                    dependencies, GitHub workflows, and the
+                                    hidden knowledge required to make AI output
+                                    usable inside an enterprise codebase.
                                 </p>
                                 <p>
-                                    Both problems funneled into the same
-                                    backlog: designer files a ticket, designer
-                                    waits, developer may or may not fix it
-                                    later, and the design debt continues to
-                                    accumulate. The trust between the functions
-                                    was starting to fall apart, so I put
-                                    together a way to enable the designers to
-                                    contribute to the codebase in a meaninful
-                                    way.
+                                    A designer could prompt a tool to create an
+                                    interface, but the result often missed the
+                                    design system: components looked close but
+                                    were custom-built, styles were duplicated,
+                                    and tokens were hardcoded.
+                                </p>
+                                <p>
+                                    And starting from a blank React app, the
+                                    internal design-system components imported
+                                    but rendered incorrectly because the token
+                                    stylesheets and dependencies were missing.
+                                </p>
+                                <p>
+                                    It became a new version of an old handoff
+                                    problem: designers still filed tickets and
+                                    waited, developers still cleaned up
+                                    approximations, and the team was faster in
+                                    theory but not in practice.
                                 </p>
                             </div>
                             <div>
-                                <p class="col-label">The Approach</p>
+                                <p class="col-label">The Opportunity</p>
                                 <h3>
-                                    Fix it in the repo. Then prevent the next
-                                    one.
+                                    If the whole team could build with AI
+                                    safely, we'd move faster without the handoff
+                                    loop.
                                 </h3>
                                 <p>
-                                    To address the immediate drift in the
-                                    products that I worked in, I leveraged
-                                    Claude to address the visual
-                                    inconsistencies. While I had the development
-                                    knowledge to do it myself, leveraging Claude
-                                    allowed me to scan the entire repo and fix
-                                    the repeated mistakes wholesale. I only had
-                                    to confirm and redirect the agent in the
-                                    right direction using my knowledge. I have
-                                    opened several pull requests directly two
-                                    large product repos owned by different
-                                    teams. The PRs replaced AI-generated
-                                    lookalike code with real design system
-                                    components, pulled repeated patterns into
-                                    shared components, and surfaced platform
-                                    features the original implementation had
-                                    buried. The cleanup made the next release
-                                    cheaper for the developers, not just nicer
-                                    for the users.
+                                    The goal was never to turn every designer
+                                    into an engineer. It was to remove the setup
+                                    burden, encode the right defaults, and give
+                                    designers and cross-functional partners a
+                                    governed way to build with AI against the
+                                    real design system and GitHub workflow.
                                 </p>
                                 <p>
-                                    But individual PRs only fix individual
-                                    problems. To ensure any new contribution
-                                    from a developer or designer (or any
-                                    "builder") conforms to the standards when
-                                    using AI agents, I added a ruleset to the
-                                    repo so that the design system patterns are
-                                    followed by default. The rule now lives with
-                                    the code, not only in someone's head that it
-                                    becomes a bottleneck during review cycles.
+                                    That meant prototypes could get in front of
+                                    customers sooner, and what developers
+                                    received would be closer to real
+                                    implementation instead of a static file to
+                                    rebuild.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The Hidden Setup Gap</p>
+                                <h3>
+                                    The real barrier wasn't AI — it was setup.
+                                </h3>
+                                <p>
+                                    The issue wasn't willingness. It was that AI
+                                    coding tools assumed a developer baseline
+                                    many non-developers had never needed before.
+                                    "Use Claude Code" sounds simple in theory,
+                                    but the actual starting line was much
+                                    further back — some designers had never
+                                    opened a terminal, authenticated through
+                                    GitHub, cloned a repo, installed
+                                    dependencies, or seen how an AI coding agent
+                                    connects to a codebase.
+                                </p>
+                                <p>
+                                    So enablement couldn't start with advanced
+                                    prompting or contribution workflows. It had
+                                    to start with the basics: what the terminal
+                                    is, how GitHub authentication works, how to
+                                    open a project locally, what an environment
+                                    setup error looks like, and how to recover
+                                    when the agent gets stuck. The bootcamp
+                                    became less about teaching people to "code"
+                                    and more about making the invisible
+                                    technical assumptions visible.
+                                </p>
+                                <p>
+                                    That's why the bootstrap repo mattered. Once
+                                    those basics were demystified — and once as
+                                    many setup decisions as possible were
+                                    removed — designers could actually reach the
+                                    design problem and prototype with the design
+                                    system, instead of getting blocked long
+                                    before they ever got there.
+                                </p>
+                                <p>
+                                    That's why the guide met people where the
+                                    fear was. The setup chapter explicitly
+                                    reassured people that they wouldn't break
+                                    their machine and that we'd go step by step.
+                                    The tone was deliberate — the barrier was
+                                    confidence as much as knowledge.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">My Role</p>
+                                <h3>
+                                    Translating developer-native workflows for
+                                    the rest of the team.
+                                </h3>
+                                <p>
+                                    I became the bridge between design,
+                                    engineering, and the new AI tooling
+                                    workflows — helping designers, PMs, ops
+                                    partners, content designers, and managers
+                                    get from "I want to try this" to "I can
+                                    build, host, and share a working prototype."
+                                    That meant hand-holding people through the
+                                    full path: setting up their environments,
+                                    choosing the right tool for the task,
+                                    prompting against the design system,
+                                    debugging missing dependencies, hosting
+                                    prototypes in GitHub, and knowing when a
+                                    prototype could become a real contribution
+                                    to a team's codebase.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The Tool Ladder</p>
+                                <h3>
+                                    Start where you're comfortable; climb only
+                                    as far as you need.
+                                </h3>
+                                <p>
+                                    Part of being the bridge was matching the
+                                    tool to a person's technical comfort level
+                                    instead of pushing everyone into the most
+                                    advanced workflow. I laid out a tool ladder:
+                                    prompt-to-prototype tools for quick
+                                    wireframing, an AI IDE for people ready to
+                                    touch code in a repo, and a terminal-based
+                                    coding agent for heavier implementation
+                                    work. People could start where they were
+                                    comfortable and climb only as far as they
+                                    needed.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pullquote">
+                            <p>
+                                "AI tooling for non-developers. Sooji hand-held
+                                Designers, PMs, Ops, Content designers (and me!)
+                                through leveraging Builder, Cursor, Claude Code.
+                                She walked people step-by-step through setting
+                                up their environments, leveraging design systems
+                                to vibe code, all the way to hosting their
+                                prototypes in GitHub or contributing to their
+                                respective teams' codebase."
+                            </p>
+                            <cite>— My manager, year-end review</cite>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">The System I Built</p>
+                                <h3>
+                                    A guide, a bootstrap repo, and shared AI
+                                    rules.
+                                </h3>
+                                <p>
+                                    The first blocker was setup knowledge. The
+                                    paved-path engineering repos came with the
+                                    right design-system setup, but also the
+                                    overhead of a full product codebase. Blank
+                                    starter apps were lighter, but missing the
+                                    internal token stylesheets, dependencies,
+                                    and component-registry setup that make the
+                                    design system render correctly. So I built a
+                                    <strong>prototype bootstrap repo</strong>
+                                    people could clone instead of scaffolding
+                                    their own — pre-wired with the internal
+                                    component registry, CDN token stylesheets,
+                                    and design-system dependencies. From the
+                                    first prompt, someone could tell an agent
+                                    "use the design system button" and get the
+                                    right component, correctly styled.
+                                </p>
+                                <p>
+                                    Then I wrote an
+                                    <strong>end-to-end enablement guide</strong>
+                                    covering setup, tool choice, prompting
+                                    patterns, common errors, GitHub hosting, and
+                                    the Intuit-specific gotchas that usually
+                                    only come from years of shipping inside the
+                                    company. I paired it with 1:1 setup sessions
+                                    so people could get over the first
+                                    intimidating step with support — not just
+                                    learning to code, but learning how to
+                                    interact with an AI agent at all.
+                                </p>
+                                <p>
+                                    I authored and maintain the guide myself,
+                                    but it didn't stay static: it grew from the
+                                    real questions the people I coached ran
+                                    into. Whenever someone hit something the
+                                    guide didn't cover, I'd walk them through it
+                                    and then fold the answer back in so the next
+                                    person never had to ask. That feedback loop
+                                    kept it current with wherever people were
+                                    actually getting stuck — and the fact that
+                                    it kept accumulating questions was itself a
+                                    sign the team was really using it.
+                                </p>
+                                <p>
+                                    Finally, I added shared
+                                    <strong>AI rules</strong> to the repo. They
+                                    tell coding agents to prioritize
+                                    design-system components, use tokens instead
+                                    of hardcoded values, and avoid custom
+                                    components when a system one already exists
+                                    — so the right defaults were encoded into
+                                    the workflow, not left to individual memory.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">
+                                    Why the rules were necessary
+                                </p>
+                                <h3>
+                                    "Looks right" and "belongs in the system"
+                                    aren't the same thing.
+                                </h3>
+                                <p>
+                                    Part of the guide was diagnosing exactly why
+                                    AI output drifted. When you point a
+                                    prompt-to-prototype tool at a design-system
+                                    library, it doesn't reuse the real,
+                                    production components — it reads the color
+                                    and type styles and re-generates its own
+                                    lookalike versions on top of a different
+                                    underlying UI library. The result is close
+                                    enough to fool a screenshot but wrong in the
+                                    code: custom components where system ones
+                                    exist, and the same drift I was cleaning up
+                                    in product repos.
+                                </p>
+                                <p>
+                                    You can nudge it toward the right component
+                                    one frame at a time, but the moment you add
+                                    another element the cycle repeats. That's
+                                    the gap the bootstrap repo and the AGENTS.md
+                                    rules close by default — they point agents
+                                    at the real component registry instead of
+                                    letting them re-invent it.
                                 </p>
                             </div>
                         </div>
@@ -2452,7 +2657,7 @@
                         <div class="pullquote">
                             <p>
                                 "Because the rule is set for the agents, the
-                                individual developers don't have to learn or be
+                                individual builders don't have to learn or be
                                 aware of the design rules — they can focus on
                                 the feature."
                             </p>
@@ -2519,20 +2724,21 @@ color: #1f2937;                    <span class="c-cm">// wrong</span>
 
                         <div class="cs-cols full">
                             <div>
-                                <p class="col-label">Designer Enablement</p>
-                                <h3>The guide and the bootstrap repo.</h3>
+                                <p class="col-label">The Artifacts</p>
+                                <h3>
+                                    What people could clone, read, and use
+                                    immediately.
+                                </h3>
                                 <p>
-                                    To get the rest of the design org unstuck on
-                                    prototyping, I wrote an end-to-end setup
-                                    guide covering the company-internal paved
-                                    paths, the right modes of operation, and the
-                                    gotchas you only know from years of shipping
-                                    at Intuit. I shared it with the broader
-                                    Design organization and ran 1:1 setup
-                                    sessions with designers and PMs who needed a
-                                    hand getting over the first hump of not only
-                                    learning how to code but also learning how
-                                    to interact with an AI agent.
+                                    The bootstrap repo and enablement guide
+                                    turned a developer-native setup process into
+                                    a repeatable starting point for
+                                    non-developers. Instead of scaffolding a
+                                    blank app, finding the right dependencies,
+                                    and debugging missing design-system styles,
+                                    people could clone the repo, follow the
+                                    guide, and start prompting against the real
+                                    design system.
                                 </p>
                                 <div class="artifact">
                                     <span
@@ -2564,27 +2770,39 @@ color: #1f2937;                    <span class="c-cm">// wrong</span>
                                     Shareable doc for everyone in the org +
                                     outside of the org!
                                 </figcaption>
+                            </div>
+                        </div>
+
+                        <div class="cs-cols full">
+                            <div>
+                                <p class="col-label">
+                                    Making the Defaults Real
+                                </p>
+                                <h3>
+                                    I also applied the same standards directly
+                                    in product code.
+                                </h3>
                                 <p>
-                                    The reason this is hard in the first place:
-                                    paved-path repos inherit the design system's
-                                    styles and tokens from a shared CDN
-                                    stylesheet that every UI repo already loads.
-                                    Spin up a blank create-react-app and you get
-                                    none of it — the components import fine but
-                                    render unstyled and wrong, because the
-                                    tokens they depend on were never delivered.
+                                    Across two large product repos, I opened
+                                    pull requests that replaced AI-generated
+                                    lookalike components with real design-system
+                                    components, removed duplicated styles,
+                                    pulled repeated patterns into shared
+                                    components, and surfaced platform features
+                                    the original implementation had buried.
+                                    Leaning on Claude let me scan whole repos
+                                    and fix recurring mistakes at scale, while
+                                    my development background helped me confirm,
+                                    redirect, and review the output.
                                 </p>
                                 <p>
-                                    So I built a
-                                    <strong>prototype bootstrap repo</strong>
-                                    that wires the CDN token stylesheets and all
-                                    the dependencies up front, pointed at the
-                                    internal component registry. From the first
-                                    prompt, the user can just tell the agent
-                                    "use the design system button" and it
-                                    resolves the right component, correctly
-                                    styled — no missing-styles surprises, no
-                                    token-URL spelunking.
+                                    Those 20+ PRs showed the difference between
+                                    "AI generated something that looks right"
+                                    and "AI helped produce code that belongs in
+                                    the system." But the more important move was
+                                    encoding the standards into AGENTS.md so
+                                    future AI-assisted contributions started
+                                    from the right defaults.
                                 </p>
                             </div>
                         </div>
@@ -2593,16 +2811,17 @@ color: #1f2937;                    <span class="c-cm">// wrong</span>
                             <div>
                                 <p class="col-label">Why this matters</p>
                                 <h3>
-                                    3x-ing the team, not just fixing tickets.
+                                    It changed who could participate in
+                                    building.
                                 </h3>
                                 <p>
-                                    Shipping PRs was only half of it. The bigger
-                                    unlock was changing how the team prototypes.
-                                    Instead of Figma clickthroughs, designers
-                                    now build real coded prototypes with AI —
-                                    complete paths, real interactions, wired in
-                                    minutes instead of the hours it takes to
-                                    fake every click target in Figma.
+                                    This was not just about faster prototypes.
+                                    Designers could move beyond Figma
+                                    clickthroughs and build real coded
+                                    prototypes with real interactions and real
+                                    design-system components — complete flows,
+                                    wired in minutes instead of the hours it
+                                    takes to fake every click target in Figma.
                                 </p>
                                 <p>
                                     That changes what a prototype is
@@ -2616,39 +2835,64 @@ color: #1f2937;                    <span class="c-cm">// wrong</span>
                                     rewrite.
                                 </p>
                                 <p>
-                                    The point was never "designers should pick
-                                    up tickets." It was to get the whole team
-                                    into the 3x spirit — remove the structural
-                                    blockers, and everyone moves faster without
-                                    working harder. The A2D Design team hit
-                                    <strong>100% adoption</strong>, every
-                                    designer producing meaningful, IDS-based,
-                                    customer-ready prototypes inside their
-                                    existing workflow.
+                                    And it wasn't only designers. PMs and
+                                    content designers could explore ideas
+                                    without waiting for a developer to scaffold
+                                    the first version. Developers received
+                                    prototypes and contributions closer to real
+                                    implementation instead of static files to
+                                    rebuild from scratch.
+                                </p>
+                                <p>
+                                    The A2D Design team hit
+                                    <strong>100% adoption</strong> of the
+                                    prototype setup and bootstrap repo, and I
+                                    supported designers, PMs, ops partners,
+                                    content designers, and managers through
+                                    setup, prompting, hosting, and contribution
+                                    workflows.
+                                </p>
+                                <figure class="doc-thumb">
+                                    <img
+                                        src="images/cs04-adoption.png"
+                                        alt="AI-native tools adoption dashboard showing 100% overall adoption — 9 of 9 team members adopted — with the historic adoption curve climbing to the 100% goal line"
+                                    />
+                                </figure>
+                                <figcaption class="caption">
+                                    AI-native tooling adoption reached 100% of
+                                    the design team (9/9), tracked in the team
+                                    dashboard rather than self-reported.
+                                </figcaption>
+                                <p>
+                                    The bigger unlock wasn't that I could code
+                                    faster with AI. It was that I made
+                                    AI-assisted building usable for the rest of
+                                    the team.
                                 </p>
                             </div>
                         </div>
 
                         <div class="impact">
                             <div class="impact-item">
-                                <div class="impact-n">20+ PRs</div>
-                                <div class="impact-d">
-                                    Merged across two different repos to clean
-                                    up design + componentization
-                                </div>
-                            </div>
-                            <div class="impact-item">
-                                <div class="impact-n">AGENTS.md</div>
-                                <div class="impact-d">
-                                    Ruleset added so future AI-assisted
-                                    contributions follow IDS patterns by default
-                                </div>
-                            </div>
-                            <div class="impact-item">
                                 <div class="impact-n">100%</div>
                                 <div class="impact-d">
-                                    A2D Design team adoption of the IDS
-                                    prototype setup &amp; bootstrap repo
+                                    A2D Design team adoption of the prototype
+                                    setup &amp; bootstrap repo
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">5 roles</div>
+                                <div class="impact-d">
+                                    Designers, PMs, content designers, ops
+                                    partners &amp; managers coached from "want
+                                    to try" to "shipped a prototype"
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-n">Governed by default</div>
+                                <div class="impact-d">
+                                    Bootstrap repo + AGENTS.md kept AI output
+                                    aligned to the design system before review
                                 </div>
                             </div>
                         </div>
@@ -2656,15 +2900,16 @@ color: #1f2937;                    <span class="c-cm">// wrong</span>
                         <div class="reflection">
                             <p class="reflection-label">Reflection</p>
                             <p>
-                                The default move in design is to write the nit,
-                                file the ticket, and trust the loop. But the
-                                loop is slow, and the design system drifts while
-                                it runs. Picking up the code wasn't a hero move
-                                — it was the realization that for a class of
-                                problem, the cheapest fix is in the repo. The
-                                AGENTS.md is the part I'm most proud of: a
-                                single PR that fixes a recurring problem for
-                                every contributor after me.
+                                The real unlock wasn't coding faster. Cleaning
+                                up repos and writing rules mattered, but they
+                                were supporting acts. What changed the team was
+                                making AI-assisted building accessible,
+                                governed, and repeatable — so the people who'd
+                                been blocked by setup and repo conventions could
+                                prototype, contribute, and use the design system
+                                safely on their own. Turning an individual
+                                superpower into a shared capability is the part
+                                I'm most proud of.
                             </p>
                         </div>
                     </div>
