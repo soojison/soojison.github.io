@@ -631,6 +631,126 @@ hr {
     }
 }
 
+/* ── ACT LABEL ── */
+.act-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 4rem 0 2.5rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Audit table (4 columns — let row headers wrap, tighten cells) */
+.audit-table tbody th {
+    white-space: normal;
+    width: auto;
+}
+.audit-table th,
+.audit-table td {
+    padding: 0.9rem 1rem 0.9rem 0;
+    font-size: 0.85rem;
+}
+
+/* Inline code (within case-study prose) */
+.cs-cols code,
+.segment-table code {
+    font-family: var(--mono);
+    font-size: 0.85em;
+    background: var(--surface);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+    color: var(--text);
+}
+
+/* ── INLINE DIAGRAMS ── */
+.diagram {
+    margin: 2.5rem 0;
+}
+.diagram figcaption {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+}
+.diagram-table {
+    margin: 0;
+}
+.diagram-note {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 1rem;
+}
+
+/* Bar chart (survey highlights) */
+.bar-chart {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--text);
+    border-bottom: 1px solid var(--text);
+    padding: 1.5rem 0;
+}
+.bar-chart li {
+    display: grid;
+    grid-template-columns: minmax(0, 15rem) 1fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+.bar-label {
+    font-size: 0.9rem;
+    color: var(--text);
+}
+.bar-track {
+    height: 0.5rem;
+    background: var(--surface);
+    border-radius: 999px;
+    overflow: hidden;
+}
+.bar-fill {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+    border-radius: 999px;
+}
+.bar-val {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    text-align: right;
+    min-width: 3.5rem;
+}
+
+@media (max-width: 720px) {
+    .bar-chart li {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "label val"
+            "track track";
+        gap: 0.5rem 1rem;
+    }
+    .bar-label {
+        grid-area: label;
+    }
+    .bar-val {
+        grid-area: val;
+    }
+    .bar-track {
+        grid-area: track;
+    }
+}
+
 /* ── LIGHTBOX ── */
 .lightbox {
     display: none;
@@ -727,6 +847,14 @@ hr {
 }
 .cs-cols.full {
     grid-template-columns: 1fr;
+}
+.cs-cols.reconcile > div {
+    background: var(--bg2);
+    border-top: 2px solid var(--accent);
+    padding: 1.5rem 1.75rem 0.5rem;
+}
+.cs-cols.reconcile .finding-list {
+    margin-top: 0;
 }
 .col-label {
     font-family: var(--mono);
